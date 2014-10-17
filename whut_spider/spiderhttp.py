@@ -50,6 +50,18 @@ class SpiderHttp(object):
 
 	def getUrlList(self,suprurl):
 		urlList = []
+		try:
+			urlPage = self.getUrlPage(suprurl)
+		except HTTPError :
+			return urlList
+		except URLError :
+			return urlList
+		except socket.timeout :
+			return urlList
+		except IncompleteRead :
+			return urlList
+		except ConnectionAbortedError :
+			return urlList
 		urlPage = self.getUrlPage(suprurl)
 		if self.codedetect != 'utf-8' and self.codedetect != 'gbk' and self.codedetect !='GB2312':
 			pass
@@ -68,3 +80,4 @@ class SpiderHttp(object):
 # SH = SpiderHttp()
 # urllist = SH.getUrlList(url)
 # print(urllist)
+
