@@ -19,7 +19,7 @@ class WhutSpider(object):
 		self.todo_queue.enqueue(starturl)
 		self.DG = nx.DiGraph()
 
-		filefloder = r'../data/whuthtmldata/'
+		filefloder = r'../data/'
 		filename = filefloder + 'whutgraph.yaml'
 		# self.DG=nx.read_yaml('whutgraph.gml')
 		if os.path.exists(filename):
@@ -41,10 +41,10 @@ class WhutSpider(object):
 
 	def wideSpider(self):
 		count = 0
-		print('data', count)
+		# print('data', count)
 		# while (self.todo_queue.isempty() == False):
 		while (self.todo_queue.isempty() == False and count <3):
-			print('count', count)
+			# print('count', count)
 			count = count +1
 			superurl = self.todo_queue.dequeue()
 			urllist = self.SH.getUrlList(superurl)
@@ -75,7 +75,7 @@ class WhutSpider(object):
 			
 
 	def saveUrlGraph(self):
-		filefloder = r'../data/whuthtmldata/'
+		filefloder = r'../data/'
 		filename = filefloder + 'whutgraph.yaml'
 		nx.write_yaml(self.DG,filename)
 		nx.draw(self.DG)

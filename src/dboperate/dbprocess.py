@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+# urltable
+# id  超链接的索引值
+# originalurl   完整的的超链接 
+# shorturl  根据id得到的md5编码，也是存储在本地的文件名
+# visitedflag  默认为null，为文件预处理的标记
+# 			 完成倒排序索引值，之后置为true
+
 from mysql import connector
 
 class MySqlBase(object):
@@ -53,14 +60,14 @@ class MySqlBase(object):
 		cnx.commit()
 		cnx.close()
 
-	def updateVisitedFlag(self,visitedset):
+	def updateVisitedFlag(self,visitedlist):
 		cnx = connector.connect(user= self.user, password = self.pwd, host = self.host)
 		cur = cnx.cursor()
 		sqlorder = "USE %s" %self.basename 
 		cur.execute(sqlorder)
-		visitedlist = list(visitedset) 
+		# visitedlist = list(visitedset) 
 		for visitedenum in visitedlist:
-			sqlorder = "update urltable set visitedflag = True where shorturl = %s" %(visitedenum)
+			sqlorder = "update urltable set visitedflag = True where shorturl = '%s'" %(visitedenum)
 			cur.execute(sqlorder)					
 		cur.close()
 		cnx.commit()
@@ -83,13 +90,13 @@ class MySqlBase(object):
 		        originalUrllist.append(r)
 		return originalUrllist
 
-	def getVisitedUrllist(self):
-		visitedUrllist = []
+	def getNVisShortUrllist(self):
+		nvisitedUrllist = []
 		cnx = connector.connect(user= self.user, password = self.pwd, host = self.host)
 		cur = cnx.cursor()
-		sqlorder = "USE %s" %self.basename
+		sqlorder = "USE %s" %self.basename 
 		cur.execute(sqlorder) 
-		sqlorder = "select  %s from %s where visitedflag = True" %('originalurl',self.urltable)
+		sqlorder = "select  %s from %s where visitedflag = False" %('shorturl',self.urltable)
 		cur.execute(sqlorder)
 		records = cur.fetchall()
 		cur.close()
@@ -97,8 +104,8 @@ class MySqlBase(object):
 		cnx.close()
 		for row in records:
 		    for r in row:
-		        visitedUrllist.append(r)
-		return visitedUrllist
+		        nvisitedUrllist.append(r)
+		return nvisitedUrllist
 
 # basename = 'whutsearch'
 # urltable = 'urltable'

@@ -72,7 +72,8 @@ class TextExtract(object):
 		self.text_start = self.getTextStart(0)
 		self.text_end = 0
 		if (0 == self.text_start):
-		 	self.content = 'nothing can find'
+		 	# self.content = 'nothing can find'
+		 	self.content = ''
 		else:
 			# print('self.join',self.join)
 			if self.join:

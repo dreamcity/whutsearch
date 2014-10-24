@@ -3,6 +3,8 @@ sys.path.append("..")
 import dboperate.dbprocess as dboper
 import textextract as tex
 import os
+import glob
+import chardet
 import jieba
 import jieba.analyse
 from optparse import OptionParser
@@ -12,49 +14,63 @@ class FileProcess(object):
 	def __init__(self):
 		self.dbp = dboper.MySqlBase()
 		self.tinyurllist = []
-		self.filelist = []
+		self.txtfilelist = []
 		self.fileworddict = {}
 		self.wordset = {''}
 		self.wordfiledict = {}
 		self.topK = 200
-		jieba.analyse.set_stop_words("stopdict.txt")
+		jieba.analyse.set_stop_words("./fileoperate/stopdict.txt")
+
+		self.run()
 
 	def getTinyurlList(self):
-		# 这个地方需要改，最好用联合查询，得到没有处理的tinyurllist
-		self.tinyurllist = self.dbp.getShortUrlList()
+		self.tinyurllist = self.dbp.getNVisShortUrllist()	
+		self.dbp.updateVisitedFlag(self.tinyurllist)
 		# return tinyurllist
 
 	def getFilelist(self):
-		if os.path.exists('whuttextdata'):
+		htmlfilefloder = r'../data/whuthtmldata/'
+		if os.path.exists(htmlfilefloder):
 			pass
 		else:
-			os.mkdir('whuttextdata')
+			os.mkdir(htmlfilefloder)
+		txtfilefloder = r'../data/whuttxtdata/'
+		if os.path.exists(txtfilefloder):
+			pass
+		else:
+			os.mkdir(txtfilefloder)
 		# tinyurllist = self.getTinyurlList()
 		for tinyurl in self.tinyurllist:
-			filename = './whuthtmldata/' + tinyurl + '.html'
-			fileObject = open(filename,'r', encoding='utf-8')
-			filePage = fileObject.read()
+			htmlfilename = htmlfilefloder + tinyurl + '.html'
+			htmlpage = open(htmlfilename,'rb').read()
+			codingchar=chardet.detect(htmlpage)['encoding']
+			filePage = htmlpage.decode(codingchar,'ignore')
 			extractText = tex.TextExtract(filePage)
-			fileObject.clost()
-			filename = './whuttextdata/' + tinyurl + '.txt'
-			fileObject = open('filename', 'w', encoding='utf-8')
+			
+			txtfilename = txtfilefloder + tinyurl + '.txt'
+			fileObject = open(txtfilename, 'w', encoding='utf-8')
 			fileObject.write(extractText.title)
 			fileObject.close()
-			fileObject = open('filename', 'w+', encoding='utf-8')
+			fileObject = open(txtfilename, 'a+', encoding='utf-8')
 			fileObject.write(extractText.content)
 			fileObject.close()
-			self.filelist.append(filename)
+			
+			self.txtfilelist.append(txtfilename)
 		# return 
 	
 	def getWordlist(self,filename):
-		filePage = open(filename,'r', encoding='utf-8').read()
+		htmlpage = open(filename,'rb').read()
+		codingchar=chardet.detect(htmlpage)['encoding']
+		filePage = htmlpage.decode(codingchar,'ignore')
+		topK = 200
+		# filePage = open(filename,'r', encoding='utf-8').read()
 		tags = jieba.analyse.extract_tags(filePage, topK=topK)
 		wordlist = list(tags)
 		return wordlist
 
 	def getFileWordDict(self):
-		for filename in self.filelist:
-			tinyurlstr = self.tinyurllist[self.filelist.index(filename)]
+		for filename in self.txtfilelist:
+			tinyurlstr = self.tinyurllist[self.txtfilelist.index(filename)]
 			wordlist = self.getWordlist(filename)
 			self.fileworddict[tinyurlstr] = wordlist
 	
@@ -67,11 +83,19 @@ class FileProcess(object):
 
 	def getWordFileDict(self):
 		wordlist = list(self.wordset)
-		tinyurllist = []
+		# tinyurllist = []
 		for word in wordlist:
+			tinyurllist = {''}
 			self.wordfiledict[word] = tinyurllist
-			for tinyurl in self.tinyurl:
+			for tinyurl in self.tinyurllist:
 				filewordlist = self.fileworddict[tinyurl]
 				if word in filewordlist:
-					self.wordfiledict[word].append(tinyurl) 
+					self.wordfiledict[word].add(tinyurl) 
+	
+	def run(self):
+		self.getTinyurlList()
+		self.getFilelist()	
+		self.getFileWordDict()
+		self.getWordSet()
+		self.getWordFileDict()
 		
