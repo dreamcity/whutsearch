@@ -17,6 +17,7 @@ class MySqlBase(object):
 		self.host = 'localhost'
 		self.basename = 'whutsearch'
 		self.urltable = 'urltable'
+		self.wftable = 'wordfiletable'
 		self.createDB()
 	
 	def createDB(self):
@@ -27,6 +28,8 @@ class MySqlBase(object):
 		sqlorder = "USE %s" %self.basename
 		cur.execute(sqlorder)
 		sqlorder = "CREATE TABLE IF NOT EXISTS %s (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,originalurl VARCHAR(200),shorturl VARCHAR(10),visitedflag boolean DEFAULT NULL)" %self.urltable
+		cur.execute(sqlorder)
+		sqlorder = "CREATE TABLE IF NOT EXISTS %s (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,wordname VARCHAR(30),filestr mediumtext)" %self.wftable
 		cur.execute(sqlorder)
 		cur.close()
 		cnx.commit()
@@ -106,6 +109,34 @@ class MySqlBase(object):
 		    for r in row:
 		        nvisitedUrllist.append(r)
 		return nvisitedUrllist
+
+	def updateWFtable(self,wordfiledict):
+		filestr = ''
+		cnx = connector.connect(user= self.user, password = self.pwd, host = self.host)
+		cur = cnx.cursor()
+		sqlorder = "USE %s" %self.basename 
+		cur.execute(sqlorder)
+
+		for wordname in wordfiledict.keys():
+			filesetstr = wordfiledict[wordname]
+			sqlorder = "select filestr from %s where wordname = '%s'" %(self.wftable,wordname)
+			cur.execute(sqlorder)
+			records = cur.fetchall()
+			for row in records:
+			    for r in row:
+			        filestr = r
+			if filestr:
+				newfilesetstr = filestr + filesetstr
+				sqlorder = "update %s set filestr = '%s' where wordname = '%s'" %(self.wftable,newfilesetstr,wordname)			
+				cur.execute(sqlorder)
+				# print('filestr', filestr)
+			else:
+				sqlorder = "INSERT INTO %s VALUES(0,'%s','%s')" %(self.wftable, wordname, filesetstr)
+				# print('not exists')
+				cur.execute(sqlorder)
+		cur.close()
+		cnx.commit()
+		cnx.close()
 
 # basename = 'whutsearch'
 # urltable = 'urltable'

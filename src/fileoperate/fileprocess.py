@@ -85,13 +85,15 @@ class FileProcess(object):
 		wordlist = list(self.wordset)
 		# tinyurllist = []
 		for word in wordlist:
-			tinyurllist = {''}
-			self.wordfiledict[word] = tinyurllist
+			# tinyurllist = {''}
+			self.wordfiledict[word] = ''
 			for tinyurl in self.tinyurllist:
 				filewordlist = self.fileworddict[tinyurl]
 				if word in filewordlist:
-					self.wordfiledict[word].add(tinyurl) 
-	
+					self.wordfiledict[word] = self.wordfiledict[word] + tinyurl + '|' 
+					# self.wordfiledict[word].add(tinyurl) 
+		self.dbp.updateWFtable(self.wordfiledict)
+
 	def run(self):
 		self.getTinyurlList()
 		self.getFilelist()	

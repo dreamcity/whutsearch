@@ -43,7 +43,7 @@ class WhutSpider(object):
 		count = 0
 		# print('data', count)
 		# while (self.todo_queue.isempty() == False):
-		while (self.todo_queue.isempty() == False and count <3):
+		while (self.todo_queue.isempty() == False and count <6):
 			# print('count', count)
 			count = count +1
 			superurl = self.todo_queue.dequeue()
@@ -51,9 +51,9 @@ class WhutSpider(object):
 			urlFilterList = self.urlFilter(urllist)
 			for urlstr in urlFilterList:
 				self.todo_queue.enqueue(urlstr)		
-			print('superurl ', superurl)
+			# print('superurl ', superurl)
 			if superurl in self.visited_set:
-				print('in')
+				# print('in')
 				continue
 			else:
 				self.SH.downloadPage(superurl)
@@ -66,7 +66,7 @@ class WhutSpider(object):
 				# urlFilterList = self.urlFilter(urllist)
 				urlnums = len(urlFilterList)
 				if urlnums == 0:
-					print('length')
+					# print('length')
 					continue
 				urlEdgeWeight = nodeValue/(urlnums+1)
 				for urlstr in urlFilterList:
