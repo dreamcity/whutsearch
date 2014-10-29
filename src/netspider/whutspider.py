@@ -59,7 +59,7 @@ class WhutSpider(object):
 				self.SH.downloadPage(superurl)
 				self.visited_set.add(superurl)
 				if superurl in self.DG:
-					nodeValue = self.DG.in_degree(superurl)
+					nodeValue = self.DG.in_degree(superurl,weight='weight')
 				else:
 					nodeValue = 1
 				# urllist = self.SH.getUrlList(superurl)

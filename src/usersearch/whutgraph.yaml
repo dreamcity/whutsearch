@@ -1,0 +1,1927 @@
+!!python/object:networkx.classes.digraph.DiGraph
+adj: &id001
+  http://atmsp.whut.edu.cn/: {}
+  http://bill.whut.edu.cn:8099/Home/Default: {}
+  http://english.whut.edu.cn:
+    http://english.whut.edu.cn/Alumni/: &id006 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/Alumni/GIA/: &id007 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/CampusCulture/: &id008 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/CampusCulture/StudentsClubs/: &id009 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/CampusCulture/cs/: &id010 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/CampusCulture/ea/: &id011 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/Employment/: &id012 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/Employment/cks/: &id013 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/Employment/cs/: &id014 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/Employment/ottp/: &id015 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/PJ/: &id016 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/PJ/wj/: &id017 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/PJ/wp/: &id018 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/index.html: &id019 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/notice/201001/t20100105_1204.htm: &id020 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/notice/201001/t20100117_2461.htm: &id021 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/notice/201001/t20100117_2470.htm: &id022 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/notice/201004/t20100420_4489.htm: &id023 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/notice/201006/t20100612_7073.htm: &id024 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/notice/201203/t20120330_78044.htm: &id025 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/notice/201305/t20130522_95771.htm: &id026 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/notice/201409/t20140905_119268.htm: &id027 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/pw/: &id028 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/wn/201405/t20140508_116067.html: &id029 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/wn/201405/t20140508_116068.html: &id030 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/wn/201405/t20140508_116072.html: &id031 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/wn/201405/t20140508_116073.html: &id032 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/wn/201405/t20140526_116865.html: &id033 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/wn/201405/t20140526_116866.html: &id034 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/wn/201405/t20140526_116870.html: &id035 {weight: 0.058823529411764705}
+    http://english.whut.edu.cn/wn/201405/t20140526_116874.html: &id036 {weight: 0.058823529411764705}
+    http://sie.whut.edu.cn/english/: &id335 {weight: 0.058823529411764705}
+    http://www.whut.edu.cn: &id374 {weight: 0.058823529411764705}
+  http://english.whut.edu.cn/Alumni/: {}
+  http://english.whut.edu.cn/Alumni/GIA/: {}
+  http://english.whut.edu.cn/CampusCulture/: {}
+  http://english.whut.edu.cn/CampusCulture/StudentsClubs/: {}
+  http://english.whut.edu.cn/CampusCulture/cs/: {}
+  http://english.whut.edu.cn/CampusCulture/ea/: {}
+  http://english.whut.edu.cn/Employment/: {}
+  http://english.whut.edu.cn/Employment/cks/: {}
+  http://english.whut.edu.cn/Employment/cs/: {}
+  http://english.whut.edu.cn/Employment/ottp/: {}
+  http://english.whut.edu.cn/PJ/: {}
+  http://english.whut.edu.cn/PJ/wj/: {}
+  http://english.whut.edu.cn/PJ/wp/: {}
+  http://english.whut.edu.cn/index.html: {}
+  http://english.whut.edu.cn/notice/201001/t20100105_1204.htm: {}
+  http://english.whut.edu.cn/notice/201001/t20100117_2461.htm: {}
+  http://english.whut.edu.cn/notice/201001/t20100117_2470.htm: {}
+  http://english.whut.edu.cn/notice/201004/t20100420_4489.htm: {}
+  http://english.whut.edu.cn/notice/201006/t20100612_7073.htm: {}
+  http://english.whut.edu.cn/notice/201203/t20120330_78044.htm: {}
+  http://english.whut.edu.cn/notice/201305/t20130522_95771.htm: {}
+  http://english.whut.edu.cn/notice/201409/t20140905_119268.htm: {}
+  http://english.whut.edu.cn/pw/: {}
+  http://english.whut.edu.cn/wn/201405/t20140508_116067.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140508_116068.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140508_116072.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140508_116073.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140526_116865.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140526_116866.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140526_116870.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140526_116874.html: {}
+  http://i.whut.edu.cn/:
+    http://bill.whut.edu.cn:8099/Home/Default: &id003 {weight: 0.0}
+    http://english.whut.edu.cn: &id004 {weight: 0.0}
+    http://i.whut.edu.cn//IPv6zy/: &id037 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/kyjd/clfhzdsys/201410/t20141017_121192.shtml: &id038 {
+      weight: 0.0}
+    http://i.whut.edu.cn//bmxw/qtdw/xyy/201410/t20141022_131160.shtml: &id039 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/kxjsfzy/kjkfb/201410/t20141023_131255.shtml: &id040 {
+      weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/ltxgzc/201410/t20141024_131306.shtml: &id041 {
+      weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/szjd/201410/t20141020_121269.shtml: &id042 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/szjd/201410/t20141022_131185.shtml: &id043 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/tyb/201410/t20141021_121363.shtml: &id044 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/tyb/201410/t20141024_131344.shtml: &id045 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141018_121240.shtml: &id046 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141019_121253.shtml: &id047 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141020_121310.shtml: &id048 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/yjsy/bgs/201410/t20141017_121230.shtml: &id049 {
+      weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/yjsy/ygk/201410/t20141017_121228.shtml: &id050 {
+      weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/zzb/201410/t20141023_131228.shtml: &id051 {weight: 0.0}
+    http://i.whut.edu.cn//bmxw/znbm/zzb/201410/t20141023_131229.shtml: &id052 {weight: 0.0}
+    http://i.whut.edu.cn//jjjb/201406/t20140611_117751.htm: &id053 {weight: 0.0}
+    http://i.whut.edu.cn//jjjb/201406/t20140616_117898.htm: &id054 {weight: 0.0}
+    http://i.whut.edu.cn//jjjb/201406/t20140620_118162.htm: &id055 {weight: 0.0}
+    http://i.whut.edu.cn//jjjb/201409/t20140923_120262.htm: &id056 {weight: 0.0}
+    http://i.whut.edu.cn//jxdd/201409/t20140904_119244.shtml: &id057 {weight: 0.0}
+    http://i.whut.edu.cn//jxdd/201409/t20140909_119357.shtml: &id058 {weight: 0.0}
+    http://i.whut.edu.cn//jxdd/201409/t20140922_120104.shtml: &id059 {weight: 0.0}
+    http://i.whut.edu.cn//jxdd/201409/t20140922_120176.shtml: &id060 {weight: 0.0}
+    http://i.whut.edu.cn//jxdd/201409/t20140924_120357.shtml: &id061 {weight: 0.0}
+    http://i.whut.edu.cn//jxdd/201410/t20141010_120843.shtml: &id062 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/kyjd/slglzx/201410/t20141022_131167.shtml: &id063 {
+      weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/clxy/201410/t20141024_131326.shtml: &id064 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/glxy/201410/t20141022_131171.shtml: &id065 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/hyxy/201410/t20141023_131251.shtml: &id066 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/jdxy/201410/t20141023_131242.shtml: &id067 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/jjxy/201410/t20141020_121292.shtml: &id068 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/jjxy/201410/t20141021_121375.shtml: &id069 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/jtxy/201410/t20141023_131272.shtml: &id070 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/tjxy/201410/t20141022_131157.shtml: &id071 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/wgyxy/201410/t20141020_121304.shtml: &id072 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/wlgcxy/201410/t20141021_121348.shtml: &id073 {
+      weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/wlgcxy/201410/t20141023_131279.shtml: &id074 {
+      weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/ysysjxy/201410/t20141020_121282.shtml: &id075 {
+      weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/ysysjxy/201410/t20141022_131191.shtml: &id076 {
+      weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/zdhxy/201410/t20141020_121285.shtml: &id077 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/zhxy/201410/t20141024_131312.shtml: &id078 {weight: 0.0}
+    http://i.whut.edu.cn//lgjz/xyb/zzyxzxy/201410/t20141024_131301.shtml: &id079 {
+      weight: 0.0}
+    http://i.whut.edu.cn//tpxw/201409/t20140926_120471.shtml: &id080 {weight: 0.0}
+    http://i.whut.edu.cn//tpxw/201410/t20141013_120960.shtml: &id081 {weight: 0.0}
+    http://i.whut.edu.cn//tpxw/201410/t20141013_120962.shtml: &id082 {weight: 0.0}
+    http://i.whut.edu.cn//tpxw/201410/t20141013_120964.shtml: &id083 {weight: 0.0}
+    http://i.whut.edu.cn//tpxw/201410/t20141023_131268.shtml: &id084 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/bwc/201404/t20140411_114626.shtml: &id085 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/gzc/201410/t20141022_131197.shtml: &id086 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/jcc/201309/t20130912_103052.shtml: &id087 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/jcc/201309/t20130929_104241.shtml: &id088 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/jwc/201409/t20140915_119696.shtml: &id089 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/cggl/201409/t20140905_119271.shtml: &id090 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/kjkfb/201410/t20141023_131249.shtml: &id091 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/zhxx/201404/t20140416_115013.shtml: &id092 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/ldyg/201410/t20141024_131307.shtml: &id093 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_rsk/201409/t20140930_120687.shtml: &id094 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_zcbgs/201409/t20140929_120666.shtml: &id095 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_zcbgs/201410/t20141024_131309.shtml: &id096 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/shfz/201410/t20141024_131349.shtml: &id097 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/tyb/201410/t20141024_131337.shtml: &id098 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/tyb/201410/t20141024_131352.shtml: &id099 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/xcb/201403/t20140312_112642.shtml: &id100 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/xcb/201409/t20140915_119688.shtml: &id101 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131181.shtml: &id102 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131182.shtml: &id103 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131183.shtml: &id104 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/xgh/201409/t20140915_119695.shtml: &id105 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201312/t20131202_109185.shtml: &id106 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201410/t20141024_131350.shtml: &id107 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201410/t20141024_131351.shtml: &id108 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131152.shtml: &id109 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131161.shtml: &id110 {weight: 0.0}
+    http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131162.shtml: &id111 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/clxy/201410/t20141022_131164.shtml: &id112 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/clxy/201410/t20141022_131166.shtml: &id113 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/gjjyxy/gjjyxy/201312/t20131220_110714.shtml: &id114 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/gjjyxy/gjjyxy/201407/t20140720_118956.shtml: &id115 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/gjjyxy/pxzx/201410/t20141023_131273.shtml: &id116 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/gjjyxy/pxzx/201410/t20141024_131330.shtml: &id117 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/jdxy/201410/t20141024_131304.shtml: &id118 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/lxy/201410/t20141021_121410.shtml: &id119 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141022_131165.shtml: &id120 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141023_131240.shtml: &id121 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141023_131257.shtml: &id122 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/tyb/201410/t20141021_121370.shtml: &id123 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/zdhxy/201410/t20141024_131313.shtml: &id124 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/zhxy/201410/t20141021_121368.shtml: &id125 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/xyb/zzxzxy/201410/t20141023_131261.shtml: &id126 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xytg/zsdw/clyjzx/201410/t20141022_131176.shtml: &id127 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xytg/zsdw/dag/201410/t20141022_131163.shtml: &id128 {weight: 0.0}
+    http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201407/t20140711_118827.shtml: &id129 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141009_120815.shtml: &id130 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141022_131177.shtml: &id131 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141024_131357.shtml: &id132 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xyxw/clxy/201410/t20141022_131150.shtml: &id133 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/clxy/201410/t20141022_131173.shtml: &id134 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131283.shtml: &id135 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131284.shtml: &id136 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131285.shtml: &id137 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131286.shtml: &id138 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131290.shtml: &id139 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121184.shtml: &id140 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121189.shtml: &id141 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121195.shtml: &id142 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141022_131169.shtml: &id143 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141022_131170.shtml: &id144 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141024_131425.shtml: &id145 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141024_131426.shtml: &id146 {
+      weight: 0.0}
+    http://i.whut.edu.cn//xyxw/glxy/201410/t20141020_121309.shtml: &id147 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121386.shtml: &id148 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121394.shtml: &id149 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121420.shtml: &id150 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/glxy/201410/t20141022_131198.shtml: &id151 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/glxy/201410/t20141022_131201.shtml: &id152 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/glxy/201410/t20141023_131252.shtml: &id153 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hgxy/201409/t20140929_120614.shtml: &id154 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hgxy/201409/t20140929_120634.shtml: &id155 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hgxy/201410/t20141005_120738.shtml: &id156 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hgxy/201410/t20141009_120800.shtml: &id157 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hgxy/201410/t20141010_120872.shtml: &id158 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hgxy/201410/t20141013_120988.shtml: &id159 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hgxy/201410/t20141021_121372.shtml: &id160 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hyxy/201410/t20141023_131297.shtml: &id161 {weight: 0.003246753246753247}
+    http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131298.shtml: &id162 {weight: 0.003246753246753247}
+    http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131299.shtml: &id163 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131314.shtml: &id164 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131316.shtml: &id165 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131339.shtml: &id166 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131354.shtml: &id167 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hyxy/201410/t20141025_131435.shtml: &id168 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/hyxy/201410/t20141025_131436.shtml: &id169 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jdxy/201410/t20141023_131245.shtml: &id170 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jdxy/201410/t20141023_131246.shtml: &id171 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131417.shtml: &id172 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131418.shtml: &id173 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131420.shtml: &id174 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131421.shtml: &id175 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131422.shtml: &id176 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jjxy/201410/t20141010_120868.shtml: &id177 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jjxy/201410/t20141013_120957.shtml: &id178 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jjxy/201410/t20141020_121287.shtml: &id179 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jjxy/201410/t20141023_131238.shtml: &id180 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131310.shtml: &id181 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131317.shtml: &id182 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131423.shtml: &id183 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131153.shtml: &id184 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131158.shtml: &id185 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131178.shtml: &id186 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131266.shtml: &id187 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131275.shtml: &id188 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131276.shtml: &id189 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141024_131305.shtml: &id190 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jtxy/201410/t20141010_120840.shtml: &id191 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jtxy/201410/t20141011_120904.shtml: &id192 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jtxy/201410/t20141013_121005.shtml: &id193 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jtxy/201410/t20141015_121073.shtml: &id194 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jtxy/201410/t20141019_121256.shtml: &id195 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jtxy/201410/t20141019_121257.shtml: &id196 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/jtxy/201410/t20141022_131175.shtml: &id197 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/lxy/201410/t20141021_121366.shtml: &id198 {weight: 0.003246753246753247}
+    http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125790.shtml: &id199 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125800.shtml: &id200 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125801.shtml: &id201 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131231.shtml: &id202 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131232.shtml: &id203 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131271.shtml: &id204 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/lxy/201410/t20141025_131434.shtml: &id205 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/ndxy/201410/t20141011_120896.shtml: &id206 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/ndxy/201410/t20141020_121303.shtml: &id207 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/ndxy/201410/t20141020_121332.shtml: &id208 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/ndxy/201410/t20141021_121407.shtml: &id209 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/ndxy/201410/t20141022_131156.shtml: &id210 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/ndxy/201410/t20141024_131324.shtml: &id211 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/ndxy/201410/t20141024_131415.shtml: &id212 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/qcxy/201410/t20141009_120797.shtml: &id213 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/qcxy/201410/t20141010_120830.shtml: &id214 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/qcxy/201410/t20141015_121049.shtml: &id215 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/qcxy/201410/t20141017_121231.shtml: &id216 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121322.shtml: &id217 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121324.shtml: &id218 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121325.shtml: &id219 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121419.shtml: &id220 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121421.shtml: &id221 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121424.shtml: &id222 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121425.shtml: &id223 {weight: 0.003246753246753247}
+    http://i.whut.edu.cn//xyxw/sjxy/201410/t20141022_131219.shtml: &id224 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/sjxy/201410/t20141023_131270.shtml: &id225 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/sjxy/201410/t20141024_131419.shtml: &id226 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/sjxy/201410/t20141024_131429.shtml: &id227 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/szb/201410/t20141020_121341.shtml: &id228 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121397.shtml: &id229 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121413.shtml: &id230 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121415.shtml: &id231 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/szb/201410/t20141022_131172.shtml: &id232 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/szb/201410/t20141023_131247.shtml: &id233 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/szb/201410/t20141023_131274.shtml: &id234 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tjxy/201409/t20140925_120440.shtml: &id235 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tjxy/201409/t20140926_120490.shtml: &id236 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tjxy/201409/t20140930_120681.shtml: &id237 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tjxy/201410/t20141013_120999.shtml: &id238 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tjxy/201410/t20141016_121131.shtml: &id239 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tjxy/201410/t20141023_131233.shtml: &id240 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tjxy/201410/t20141023_131267.shtml: &id241 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tyb/201403/t20140312_112638.shtml: &id242 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tyb/201403/t20140321_113232.shtml: &id243 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tyb/201404/t20140417_115046.shtml: &id244 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tyb/201406/t20140605_117421.shtml: &id245 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tyb/201409/t20140915_119692.shtml: &id246 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tyb/201409/t20140923_120277.shtml: &id247 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/tyb/201410/t20141008_120778.shtml: &id248 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131211.shtml: &id249 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131212.shtml: &id250 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131213.shtml: &id251 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131214.shtml: &id252 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131215.shtml: &id253 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wfxy/201410/t20141023_131288.shtml: &id254 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wfxy/201410/t20141023_131289.shtml: &id255 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141021_121423.shtml: &id256 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131336.shtml: &id257 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131340.shtml: &id258 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131341.shtml: &id259 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131342.shtml: &id260 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131345.shtml: &id261 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131346.shtml: &id262 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wljyxy/201406/t20140605_117430.shtml: &id263 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wljyxy/201406/t20140613_117831.shtml: &id264 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wljyxy/201407/t20140710_118795.shtml: &id265 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wljyxy/201407/t20140716_118921.shtml: &id266 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wljyxy/201409/t20140915_119787.shtml: &id267 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wljyxy/201410/t20141015_121059.shtml: &id268 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wljyxy/201410/t20141020_121320.shtml: &id269 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wlxy/201410/t20141015_121064.shtml: &id270 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wlxy/201410/t20141020_121300.shtml: &id271 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121349.shtml: &id272 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121399.shtml: &id273 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121401.shtml: &id274 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121405.shtml: &id275 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/wlxy/201410/t20141024_131355.shtml: &id276 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121250.shtml: &id277 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121251.shtml: &id278 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121252.shtml: &id279 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/xxxy/201410/t20141020_121305.shtml: &id280 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/xxxy/201410/t20141020_121308.shtml: &id281 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/xxxy/201410/t20141021_121403.shtml: &id282 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/xxxy/201410/t20141021_121406.shtml: &id283 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141017_121217.shtml: &id284 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121377.shtml: &id285 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121378.shtml: &id286 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121379.shtml: &id287 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121380.shtml: &id288 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121384.shtml: &id289 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141022_131168.shtml: &id290 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131250.shtml: &id291 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131278.shtml: &id292 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131295.shtml: &id293 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131296.shtml: &id294 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131300.shtml: &id295 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131347.shtml: &id296 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131428.shtml: &id297 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zyjsxy/201406/t20140630_118433.shtml: &id298 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zyjsxy/201407/t20140711_118847.shtml: &id299 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zyjsxy/201407/t20140730_119010.shtml: &id300 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zyjsxy/201409/t20140904_119261.shtml: &id301 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zyjsxy/201409/t20140912_119539.shtml: &id302 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zyjsxy/201410/t20141024_131315.shtml: &id303 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141020_121266.shtml: &id304 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121400.shtml: &id305 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121402.shtml: &id306 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121412.shtml: &id307 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121416.shtml: &id308 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141022_131154.shtml: &id309 {weight: 0.0}
+    http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141022_131184.shtml: &id310 {weight: 0.0}
+    http://i.whut.edu.cn/xskw/: &id311 {weight: 0.0}
+    http://i.whut.edu.cn/xxtg/znbm/tyb/: &id314 {weight: 0.0}
+    http://jxpt.whut.edu.cn/: &id315 {weight: 0.0}
+    http://kfy.whut.edu.cn/rdgz/: &id316 {weight: 0.0}
+    http://lgdy.whut.edu.cn: &id318 {weight: 0.0}
+    http://lgdy.whut.edu.cn/?c=topic&a=whdjt: &id319 {weight: 0.0}
+    http://lib.whut.edu.cn/: &id320 {weight: 0.0}
+    http://mail.whut.edu.cn: &id322 {weight: 0.0}
+    http://oa.whut.edu.cn/icons/help/index.htm: &id323 {weight: 0.0}
+    http://online.whut.edu.cn: &id324 {weight: 0.0}
+    http://public.whut.edu.cn/bxyw: &id326 {weight: 0.0}
+    http://public.whut.edu.cn/jgdw/: &id328 {weight: 0.0}
+    http://public.whut.edu.cn/price/: &id329 {weight: 0.0}
+    http://public.whut.edu.cn/vcampus/: &id330 {weight: 0.0}
+    http://public.whut.edu.cn/yw: &id331 {weight: 0.0}
+    http://scc.whut.edu.cn: &id333 {weight: 0.0}
+    http://sso.whut.edu.cn:8080/ias/jump?sysid=whut_wszz: &id336 {weight: 0.0}
+    http://stuplaza.whut.edu.cn/: &id337 {weight: 0.0}
+    http://vision.whut.edu.cn: &id339 {weight: 0.0}
+    http://wlxt.whut.edu.cn/: &id340 {weight: 0.0}
+    http://wlxt.whut.edu.cn/new/zlgc/: &id341 {weight: 0.0}
+    http://www.whut.edu.cn/index.htm: &id376 {weight: 0.0}
+    http://wzq.whut.edu.cn: &id378 {weight: 0.0}
+    http://xxgk.whut.edu.cn/: &id379 {weight: 0.0}
+    http://youth.whut.edu.cn/: &id380 {weight: 0.0}
+    http://zs.whut.edu.cn/: &id382 {weight: 0.0}
+  http://i.whut.edu.cn//IPv6zy/: {}
+  http://i.whut.edu.cn//bmxw/kyjd/clfhzdsys/201410/t20141017_121192.shtml: {}
+  http://i.whut.edu.cn//bmxw/qtdw/xyy/201410/t20141022_131160.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/kxjsfzy/kjkfb/201410/t20141023_131255.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/ltxgzc/201410/t20141024_131306.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/szjd/201410/t20141020_121269.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/szjd/201410/t20141022_131185.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/tyb/201410/t20141021_121363.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/tyb/201410/t20141024_131344.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141018_121240.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141019_121253.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141020_121310.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/yjsy/bgs/201410/t20141017_121230.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/yjsy/ygk/201410/t20141017_121228.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/zzb/201410/t20141023_131228.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/zzb/201410/t20141023_131229.shtml: {}
+  http://i.whut.edu.cn//jjjb/201406/t20140611_117751.htm: {}
+  http://i.whut.edu.cn//jjjb/201406/t20140616_117898.htm: {}
+  http://i.whut.edu.cn//jjjb/201406/t20140620_118162.htm: {}
+  http://i.whut.edu.cn//jjjb/201409/t20140923_120262.htm: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140904_119244.shtml: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140909_119357.shtml: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140922_120104.shtml: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140922_120176.shtml: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140924_120357.shtml: {}
+  http://i.whut.edu.cn//jxdd/201410/t20141010_120843.shtml: {}
+  http://i.whut.edu.cn//lgjz/kyjd/slglzx/201410/t20141022_131167.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/clxy/201410/t20141024_131326.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/glxy/201410/t20141022_131171.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/hyxy/201410/t20141023_131251.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/jdxy/201410/t20141023_131242.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/jjxy/201410/t20141020_121292.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/jjxy/201410/t20141021_121375.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/jtxy/201410/t20141023_131272.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/tjxy/201410/t20141022_131157.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/wgyxy/201410/t20141020_121304.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/wlgcxy/201410/t20141021_121348.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/wlgcxy/201410/t20141023_131279.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/ysysjxy/201410/t20141020_121282.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/ysysjxy/201410/t20141022_131191.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/zdhxy/201410/t20141020_121285.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/zhxy/201410/t20141024_131312.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/zzyxzxy/201410/t20141024_131301.shtml: {}
+  http://i.whut.edu.cn//tpxw/201409/t20140926_120471.shtml: {}
+  http://i.whut.edu.cn//tpxw/201410/t20141013_120960.shtml: {}
+  http://i.whut.edu.cn//tpxw/201410/t20141013_120962.shtml: {}
+  http://i.whut.edu.cn//tpxw/201410/t20141013_120964.shtml: {}
+  http://i.whut.edu.cn//tpxw/201410/t20141023_131268.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/bwc/201404/t20140411_114626.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/gzc/201410/t20141022_131197.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/jcc/201309/t20130912_103052.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/jcc/201309/t20130929_104241.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/jwc/201409/t20140915_119696.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/cggl/201409/t20140905_119271.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/kjkfb/201410/t20141023_131249.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/zhxx/201404/t20140416_115013.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/ldyg/201410/t20141024_131307.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_rsk/201409/t20140930_120687.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_zcbgs/201409/t20140929_120666.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_zcbgs/201410/t20141024_131309.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/shfz/201410/t20141024_131349.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/tyb/201410/t20141024_131337.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/tyb/201410/t20141024_131352.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xcb/201403/t20140312_112642.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xcb/201409/t20140915_119688.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131181.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131182.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131183.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xgh/201409/t20140915_119695.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201312/t20131202_109185.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201410/t20141024_131350.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201410/t20141024_131351.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131152.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131161.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131162.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/clxy/201410/t20141022_131164.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/clxy/201410/t20141022_131166.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/gjjyxy/201312/t20131220_110714.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/gjjyxy/201407/t20140720_118956.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/pxzx/201410/t20141023_131273.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/pxzx/201410/t20141024_131330.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/jdxy/201410/t20141024_131304.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/lxy/201410/t20141021_121410.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141022_131165.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141023_131240.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141023_131257.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/tyb/201410/t20141021_121370.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/zdhxy/201410/t20141024_131313.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/zhxy/201410/t20141021_121368.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/zzxzxy/201410/t20141023_131261.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/clyjzx/201410/t20141022_131176.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/dag/201410/t20141022_131163.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201407/t20140711_118827.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141009_120815.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141022_131177.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141024_131357.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141022_131150.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141022_131173.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131283.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131284.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131285.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131286.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131290.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121184.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121189.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121195.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141022_131169.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141022_131170.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141024_131425.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141024_131426.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141020_121309.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121386.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121394.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121420.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141022_131198.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141022_131201.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141023_131252.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201409/t20140929_120614.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201409/t20140929_120634.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141005_120738.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141009_120800.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141010_120872.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141013_120988.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141021_121372.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141023_131297.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131298.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131299.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131314.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131316.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131339.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131354.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141025_131435.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141025_131436.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141023_131245.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141023_131246.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131417.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131418.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131420.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131421.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131422.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141010_120868.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141013_120957.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141020_121287.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141023_131238.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131310.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131317.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131423.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131153.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131158.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131178.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131266.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131275.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131276.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141024_131305.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141010_120840.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141011_120904.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141013_121005.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141015_121073.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141019_121256.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141019_121257.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141022_131175.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141021_121366.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125790.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125800.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125801.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131231.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131232.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131271.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141025_131434.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141011_120896.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141020_121303.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141020_121332.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141021_121407.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141022_131156.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141024_131324.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141024_131415.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141009_120797.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141010_120830.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141015_121049.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141017_121231.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121322.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121324.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121325.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121419.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121421.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121424.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121425.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141022_131219.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141023_131270.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141024_131419.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141024_131429.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141020_121341.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121397.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121413.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121415.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141022_131172.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141023_131247.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141023_131274.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201409/t20140925_120440.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201409/t20140926_120490.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201409/t20140930_120681.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141013_120999.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141016_121131.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141023_131233.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141023_131267.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201403/t20140312_112638.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201403/t20140321_113232.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201404/t20140417_115046.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201406/t20140605_117421.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201409/t20140915_119692.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201409/t20140923_120277.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201410/t20141008_120778.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131211.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131212.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131213.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131214.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131215.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141023_131288.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141023_131289.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141021_121423.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131336.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131340.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131341.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131342.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131345.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131346.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201406/t20140605_117430.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201406/t20140613_117831.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201407/t20140710_118795.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201407/t20140716_118921.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201409/t20140915_119787.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201410/t20141015_121059.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201410/t20141020_121320.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141015_121064.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141020_121300.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121349.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121399.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121401.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121405.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141024_131355.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121250.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121251.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121252.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141020_121305.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141020_121308.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141021_121403.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141021_121406.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141017_121217.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121377.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121378.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121379.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121380.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121384.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141022_131168.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131250.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131278.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131295.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131296.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131300.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131347.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131428.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201406/t20140630_118433.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201407/t20140711_118847.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201407/t20140730_119010.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201409/t20140904_119261.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201409/t20140912_119539.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201410/t20141024_131315.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141020_121266.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121400.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121402.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121412.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121416.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141022_131154.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141022_131184.shtml: {}
+  http://i.whut.edu.cn/xskw/:
+    http://english.whut.edu.cn: &id005 {weight: 0.16666666666666666}
+    http://i.whut.edu.cn/xskw/: &id312 {weight: 0.16666666666666666}
+    http://i.whut.edu.cn/xskw//: &id313 {weight: 0.16666666666666666}
+    http://lib.whut.edu.cn/: &id321 {weight: 0.16666666666666666}
+    http://public.whut.edu.cn/bxyw: &id327 {weight: 0.16666666666666666}
+    http://public.whut.edu.cn/yw: &id332 {weight: 0.16666666666666666}
+    http://scc.whut.edu.cn: &id334 {weight: 0.16666666666666666}
+    http://stuplaza.whut.edu.cn/: &id338 {weight: 0.16666666666666666}
+    http://www.whut.edu.cn/index.htm: &id377 {weight: 0.16666666666666666}
+    http://youth.whut.edu.cn/: &id381 {weight: 0.16666666666666666}
+    http://zs.whut.edu.cn/: &id383 {weight: 0.16666666666666666}
+  http://i.whut.edu.cn/xskw//: {}
+  http://i.whut.edu.cn/xxtg/znbm/tyb/: {}
+  http://jxpt.whut.edu.cn/: {}
+  http://kfy.whut.edu.cn/rdgz/: {}
+  http://kjcx.whut.edu.cn/index.jsp: {}
+  http://lgdy.whut.edu.cn: {}
+  http://lgdy.whut.edu.cn/?c=topic&a=whdjt: {}
+  http://lib.whut.edu.cn/:
+    http://atmsp.whut.edu.cn/: &id002 {weight: 0.05405405405405406}
+    http://kjcx.whut.edu.cn/index.jsp: &id317 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn/dzfw/1003.jhtml: &id342 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn/xw/829.jhtml: &id343 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/dzfw/1001.jhtml: &id344 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/dzfw/1002.jhtml: &id345 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/dzfw/1003.jhtml: &id346 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/dzfw/1005.jhtml: &id347 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/dzfw/1007.jhtml: &id348 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/dzfw/1216.jhtml: &id349 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/dzfw/1972.jhtml: &id350 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/dzfw/993.jhtml: &id351 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/dzfw/995.jhtml: &id352 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/px/2296.jhtml: &id353 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/px/2317.jhtml: &id354 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/px/2336.jhtml: &id355 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/px/2346.jhtml: &id356 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/px/2351.jhtml: &id357 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/px/2358.jhtml: &id358 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/px/2360.jhtml: &id359 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/tzgg/2345.jhtml: &id360 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/tzgg/2347.jhtml: &id361 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/tzgg/2348.jhtml: &id362 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/tzgg/2353.jhtml: &id363 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/tzgg/2355.jhtml: &id364 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/tzgg/2357.jhtml: &id365 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/tzgg/2359.jhtml: &id366 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/xw/2180.jhtml: &id367 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/xw/2188.jhtml: &id368 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/xw/2204.jhtml: &id369 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/xw/2205.jhtml: &id370 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/xw/2206.jhtml: &id371 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/xw/2246.jhtml: &id372 {weight: 0.05405405405405406}
+    http://www.lib.whut.edu.cn:80/xw/2335.jhtml: &id373 {weight: 0.05405405405405406}
+    http://www.whut.edu.cn: &id375 {weight: 0.05405405405405406}
+  http://mail.whut.edu.cn: {}
+  http://oa.whut.edu.cn/icons/help/index.htm: {}
+  http://online.whut.edu.cn: {}
+  http://pub.whut.edu.cn/yw/: {}
+  http://public.whut.edu.cn/bxyw: {}
+  http://public.whut.edu.cn/jgdw/: {}
+  http://public.whut.edu.cn/price/: {}
+  http://public.whut.edu.cn/vcampus/: {}
+  http://public.whut.edu.cn/yw:
+    http://pub.whut.edu.cn/yw/: &id325 {weight: 1.0}
+  http://scc.whut.edu.cn: {}
+  http://sie.whut.edu.cn/english/: {}
+  http://sso.whut.edu.cn:8080/ias/jump?sysid=whut_wszz: {}
+  http://stuplaza.whut.edu.cn/: {}
+  http://vision.whut.edu.cn: {}
+  http://wlxt.whut.edu.cn/: {}
+  http://wlxt.whut.edu.cn/new/zlgc/: {}
+  http://www.lib.whut.edu.cn/dzfw/1003.jhtml: {}
+  http://www.lib.whut.edu.cn/xw/829.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1001.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1002.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1003.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1005.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1007.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1216.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1972.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/993.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/995.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2296.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2317.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2336.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2346.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2351.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2358.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2360.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2345.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2347.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2348.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2353.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2355.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2357.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2359.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2180.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2188.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2204.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2205.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2206.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2246.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2335.jhtml: {}
+  http://www.whut.edu.cn: {}
+  http://www.whut.edu.cn/index.htm: {}
+  http://wzq.whut.edu.cn: {}
+  http://xxgk.whut.edu.cn/: {}
+  http://youth.whut.edu.cn/: {}
+  http://zs.whut.edu.cn/: {}
+edge: *id001
+graph: {}
+node:
+  http://atmsp.whut.edu.cn/: {}
+  http://bill.whut.edu.cn:8099/Home/Default: {}
+  http://english.whut.edu.cn: {}
+  http://english.whut.edu.cn/Alumni/: {}
+  http://english.whut.edu.cn/Alumni/GIA/: {}
+  http://english.whut.edu.cn/CampusCulture/: {}
+  http://english.whut.edu.cn/CampusCulture/StudentsClubs/: {}
+  http://english.whut.edu.cn/CampusCulture/cs/: {}
+  http://english.whut.edu.cn/CampusCulture/ea/: {}
+  http://english.whut.edu.cn/Employment/: {}
+  http://english.whut.edu.cn/Employment/cks/: {}
+  http://english.whut.edu.cn/Employment/cs/: {}
+  http://english.whut.edu.cn/Employment/ottp/: {}
+  http://english.whut.edu.cn/PJ/: {}
+  http://english.whut.edu.cn/PJ/wj/: {}
+  http://english.whut.edu.cn/PJ/wp/: {}
+  http://english.whut.edu.cn/index.html: {}
+  http://english.whut.edu.cn/notice/201001/t20100105_1204.htm: {}
+  http://english.whut.edu.cn/notice/201001/t20100117_2461.htm: {}
+  http://english.whut.edu.cn/notice/201001/t20100117_2470.htm: {}
+  http://english.whut.edu.cn/notice/201004/t20100420_4489.htm: {}
+  http://english.whut.edu.cn/notice/201006/t20100612_7073.htm: {}
+  http://english.whut.edu.cn/notice/201203/t20120330_78044.htm: {}
+  http://english.whut.edu.cn/notice/201305/t20130522_95771.htm: {}
+  http://english.whut.edu.cn/notice/201409/t20140905_119268.htm: {}
+  http://english.whut.edu.cn/pw/: {}
+  http://english.whut.edu.cn/wn/201405/t20140508_116067.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140508_116068.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140508_116072.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140508_116073.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140526_116865.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140526_116866.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140526_116870.html: {}
+  http://english.whut.edu.cn/wn/201405/t20140526_116874.html: {}
+  http://i.whut.edu.cn/: {}
+  http://i.whut.edu.cn//IPv6zy/: {}
+  http://i.whut.edu.cn//bmxw/kyjd/clfhzdsys/201410/t20141017_121192.shtml: {}
+  http://i.whut.edu.cn//bmxw/qtdw/xyy/201410/t20141022_131160.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/kxjsfzy/kjkfb/201410/t20141023_131255.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/ltxgzc/201410/t20141024_131306.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/szjd/201410/t20141020_121269.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/szjd/201410/t20141022_131185.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/tyb/201410/t20141021_121363.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/tyb/201410/t20141024_131344.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141018_121240.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141019_121253.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141020_121310.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/yjsy/bgs/201410/t20141017_121230.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/yjsy/ygk/201410/t20141017_121228.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/zzb/201410/t20141023_131228.shtml: {}
+  http://i.whut.edu.cn//bmxw/znbm/zzb/201410/t20141023_131229.shtml: {}
+  http://i.whut.edu.cn//jjjb/201406/t20140611_117751.htm: {}
+  http://i.whut.edu.cn//jjjb/201406/t20140616_117898.htm: {}
+  http://i.whut.edu.cn//jjjb/201406/t20140620_118162.htm: {}
+  http://i.whut.edu.cn//jjjb/201409/t20140923_120262.htm: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140904_119244.shtml: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140909_119357.shtml: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140922_120104.shtml: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140922_120176.shtml: {}
+  http://i.whut.edu.cn//jxdd/201409/t20140924_120357.shtml: {}
+  http://i.whut.edu.cn//jxdd/201410/t20141010_120843.shtml: {}
+  http://i.whut.edu.cn//lgjz/kyjd/slglzx/201410/t20141022_131167.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/clxy/201410/t20141024_131326.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/glxy/201410/t20141022_131171.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/hyxy/201410/t20141023_131251.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/jdxy/201410/t20141023_131242.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/jjxy/201410/t20141020_121292.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/jjxy/201410/t20141021_121375.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/jtxy/201410/t20141023_131272.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/tjxy/201410/t20141022_131157.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/wgyxy/201410/t20141020_121304.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/wlgcxy/201410/t20141021_121348.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/wlgcxy/201410/t20141023_131279.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/ysysjxy/201410/t20141020_121282.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/ysysjxy/201410/t20141022_131191.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/zdhxy/201410/t20141020_121285.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/zhxy/201410/t20141024_131312.shtml: {}
+  http://i.whut.edu.cn//lgjz/xyb/zzyxzxy/201410/t20141024_131301.shtml: {}
+  http://i.whut.edu.cn//tpxw/201409/t20140926_120471.shtml: {}
+  http://i.whut.edu.cn//tpxw/201410/t20141013_120960.shtml: {}
+  http://i.whut.edu.cn//tpxw/201410/t20141013_120962.shtml: {}
+  http://i.whut.edu.cn//tpxw/201410/t20141013_120964.shtml: {}
+  http://i.whut.edu.cn//tpxw/201410/t20141023_131268.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/bwc/201404/t20140411_114626.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/gzc/201410/t20141022_131197.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/jcc/201309/t20130912_103052.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/jcc/201309/t20130929_104241.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/jwc/201409/t20140915_119696.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/cggl/201409/t20140905_119271.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/kjkfb/201410/t20141023_131249.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/zhxx/201404/t20140416_115013.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/ldyg/201410/t20141024_131307.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_rsk/201409/t20140930_120687.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_zcbgs/201409/t20140929_120666.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_zcbgs/201410/t20141024_131309.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/shfz/201410/t20141024_131349.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/tyb/201410/t20141024_131337.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/tyb/201410/t20141024_131352.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xcb/201403/t20140312_112642.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xcb/201409/t20140915_119688.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131181.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131182.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131183.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xgh/201409/t20140915_119695.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201312/t20131202_109185.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201410/t20141024_131350.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201410/t20141024_131351.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131152.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131161.shtml: {}
+  http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131162.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/clxy/201410/t20141022_131164.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/clxy/201410/t20141022_131166.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/gjjyxy/201312/t20131220_110714.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/gjjyxy/201407/t20140720_118956.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/pxzx/201410/t20141023_131273.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/pxzx/201410/t20141024_131330.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/jdxy/201410/t20141024_131304.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/lxy/201410/t20141021_121410.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141022_131165.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141023_131240.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141023_131257.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/tyb/201410/t20141021_121370.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/zdhxy/201410/t20141024_131313.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/zhxy/201410/t20141021_121368.shtml: {}
+  http://i.whut.edu.cn//xytg/xyb/zzxzxy/201410/t20141023_131261.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/clyjzx/201410/t20141022_131176.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/dag/201410/t20141022_131163.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201407/t20140711_118827.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141009_120815.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141022_131177.shtml: {}
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141024_131357.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141022_131150.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141022_131173.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131283.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131284.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131285.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131286.shtml: {}
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131290.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121184.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121189.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121195.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141022_131169.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141022_131170.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141024_131425.shtml: {}
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141024_131426.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141020_121309.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121386.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121394.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121420.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141022_131198.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141022_131201.shtml: {}
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141023_131252.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201409/t20140929_120614.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201409/t20140929_120634.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141005_120738.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141009_120800.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141010_120872.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141013_120988.shtml: {}
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141021_121372.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141023_131297.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131298.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131299.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131314.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131316.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131339.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131354.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141025_131435.shtml: {}
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141025_131436.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141023_131245.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141023_131246.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131417.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131418.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131420.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131421.shtml: {}
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131422.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141010_120868.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141013_120957.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141020_121287.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141023_131238.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131310.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131317.shtml: {}
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131423.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131153.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131158.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131178.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131266.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131275.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131276.shtml: {}
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141024_131305.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141010_120840.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141011_120904.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141013_121005.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141015_121073.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141019_121256.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141019_121257.shtml: {}
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141022_131175.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141021_121366.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125790.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125800.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125801.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131231.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131232.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131271.shtml: {}
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141025_131434.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141011_120896.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141020_121303.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141020_121332.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141021_121407.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141022_131156.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141024_131324.shtml: {}
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141024_131415.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141009_120797.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141010_120830.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141015_121049.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141017_121231.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121322.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121324.shtml: {}
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121325.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121419.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121421.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121424.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121425.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141022_131219.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141023_131270.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141024_131419.shtml: {}
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141024_131429.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141020_121341.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121397.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121413.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121415.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141022_131172.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141023_131247.shtml: {}
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141023_131274.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201409/t20140925_120440.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201409/t20140926_120490.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201409/t20140930_120681.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141013_120999.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141016_121131.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141023_131233.shtml: {}
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141023_131267.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201403/t20140312_112638.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201403/t20140321_113232.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201404/t20140417_115046.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201406/t20140605_117421.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201409/t20140915_119692.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201409/t20140923_120277.shtml: {}
+  http://i.whut.edu.cn//xyxw/tyb/201410/t20141008_120778.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131211.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131212.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131213.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131214.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131215.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141023_131288.shtml: {}
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141023_131289.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141021_121423.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131336.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131340.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131341.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131342.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131345.shtml: {}
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131346.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201406/t20140605_117430.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201406/t20140613_117831.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201407/t20140710_118795.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201407/t20140716_118921.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201409/t20140915_119787.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201410/t20141015_121059.shtml: {}
+  http://i.whut.edu.cn//xyxw/wljyxy/201410/t20141020_121320.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141015_121064.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141020_121300.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121349.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121399.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121401.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121405.shtml: {}
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141024_131355.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121250.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121251.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121252.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141020_121305.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141020_121308.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141021_121403.shtml: {}
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141021_121406.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141017_121217.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121377.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121378.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121379.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121380.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121384.shtml: {}
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141022_131168.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131250.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131278.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131295.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131296.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131300.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131347.shtml: {}
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131428.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201406/t20140630_118433.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201407/t20140711_118847.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201407/t20140730_119010.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201409/t20140904_119261.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201409/t20140912_119539.shtml: {}
+  http://i.whut.edu.cn//xyxw/zyjsxy/201410/t20141024_131315.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141020_121266.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121400.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121402.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121412.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121416.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141022_131154.shtml: {}
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141022_131184.shtml: {}
+  http://i.whut.edu.cn/xskw/: {}
+  http://i.whut.edu.cn/xskw//: {}
+  http://i.whut.edu.cn/xxtg/znbm/tyb/: {}
+  http://jxpt.whut.edu.cn/: {}
+  http://kfy.whut.edu.cn/rdgz/: {}
+  http://kjcx.whut.edu.cn/index.jsp: {}
+  http://lgdy.whut.edu.cn: {}
+  http://lgdy.whut.edu.cn/?c=topic&a=whdjt: {}
+  http://lib.whut.edu.cn/: {}
+  http://mail.whut.edu.cn: {}
+  http://oa.whut.edu.cn/icons/help/index.htm: {}
+  http://online.whut.edu.cn: {}
+  http://pub.whut.edu.cn/yw/: {}
+  http://public.whut.edu.cn/bxyw: {}
+  http://public.whut.edu.cn/jgdw/: {}
+  http://public.whut.edu.cn/price/: {}
+  http://public.whut.edu.cn/vcampus/: {}
+  http://public.whut.edu.cn/yw: {}
+  http://scc.whut.edu.cn: {}
+  http://sie.whut.edu.cn/english/: {}
+  http://sso.whut.edu.cn:8080/ias/jump?sysid=whut_wszz: {}
+  http://stuplaza.whut.edu.cn/: {}
+  http://vision.whut.edu.cn: {}
+  http://wlxt.whut.edu.cn/: {}
+  http://wlxt.whut.edu.cn/new/zlgc/: {}
+  http://www.lib.whut.edu.cn/dzfw/1003.jhtml: {}
+  http://www.lib.whut.edu.cn/xw/829.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1001.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1002.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1003.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1005.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1007.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1216.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/1972.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/993.jhtml: {}
+  http://www.lib.whut.edu.cn:80/dzfw/995.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2296.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2317.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2336.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2346.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2351.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2358.jhtml: {}
+  http://www.lib.whut.edu.cn:80/px/2360.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2345.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2347.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2348.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2353.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2355.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2357.jhtml: {}
+  http://www.lib.whut.edu.cn:80/tzgg/2359.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2180.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2188.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2204.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2205.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2206.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2246.jhtml: {}
+  http://www.lib.whut.edu.cn:80/xw/2335.jhtml: {}
+  http://www.whut.edu.cn: {}
+  http://www.whut.edu.cn/index.htm: {}
+  http://wzq.whut.edu.cn: {}
+  http://xxgk.whut.edu.cn/: {}
+  http://youth.whut.edu.cn/: {}
+  http://zs.whut.edu.cn/: {}
+pred:
+  http://atmsp.whut.edu.cn/:
+    http://lib.whut.edu.cn/: *id002
+  http://bill.whut.edu.cn:8099/Home/Default:
+    http://i.whut.edu.cn/: *id003
+  http://english.whut.edu.cn:
+    http://i.whut.edu.cn/: *id004
+    http://i.whut.edu.cn/xskw/: *id005
+  http://english.whut.edu.cn/Alumni/:
+    http://english.whut.edu.cn: *id006
+  http://english.whut.edu.cn/Alumni/GIA/:
+    http://english.whut.edu.cn: *id007
+  http://english.whut.edu.cn/CampusCulture/:
+    http://english.whut.edu.cn: *id008
+  http://english.whut.edu.cn/CampusCulture/StudentsClubs/:
+    http://english.whut.edu.cn: *id009
+  http://english.whut.edu.cn/CampusCulture/cs/:
+    http://english.whut.edu.cn: *id010
+  http://english.whut.edu.cn/CampusCulture/ea/:
+    http://english.whut.edu.cn: *id011
+  http://english.whut.edu.cn/Employment/:
+    http://english.whut.edu.cn: *id012
+  http://english.whut.edu.cn/Employment/cks/:
+    http://english.whut.edu.cn: *id013
+  http://english.whut.edu.cn/Employment/cs/:
+    http://english.whut.edu.cn: *id014
+  http://english.whut.edu.cn/Employment/ottp/:
+    http://english.whut.edu.cn: *id015
+  http://english.whut.edu.cn/PJ/:
+    http://english.whut.edu.cn: *id016
+  http://english.whut.edu.cn/PJ/wj/:
+    http://english.whut.edu.cn: *id017
+  http://english.whut.edu.cn/PJ/wp/:
+    http://english.whut.edu.cn: *id018
+  http://english.whut.edu.cn/index.html:
+    http://english.whut.edu.cn: *id019
+  http://english.whut.edu.cn/notice/201001/t20100105_1204.htm:
+    http://english.whut.edu.cn: *id020
+  http://english.whut.edu.cn/notice/201001/t20100117_2461.htm:
+    http://english.whut.edu.cn: *id021
+  http://english.whut.edu.cn/notice/201001/t20100117_2470.htm:
+    http://english.whut.edu.cn: *id022
+  http://english.whut.edu.cn/notice/201004/t20100420_4489.htm:
+    http://english.whut.edu.cn: *id023
+  http://english.whut.edu.cn/notice/201006/t20100612_7073.htm:
+    http://english.whut.edu.cn: *id024
+  http://english.whut.edu.cn/notice/201203/t20120330_78044.htm:
+    http://english.whut.edu.cn: *id025
+  http://english.whut.edu.cn/notice/201305/t20130522_95771.htm:
+    http://english.whut.edu.cn: *id026
+  http://english.whut.edu.cn/notice/201409/t20140905_119268.htm:
+    http://english.whut.edu.cn: *id027
+  http://english.whut.edu.cn/pw/:
+    http://english.whut.edu.cn: *id028
+  http://english.whut.edu.cn/wn/201405/t20140508_116067.html:
+    http://english.whut.edu.cn: *id029
+  http://english.whut.edu.cn/wn/201405/t20140508_116068.html:
+    http://english.whut.edu.cn: *id030
+  http://english.whut.edu.cn/wn/201405/t20140508_116072.html:
+    http://english.whut.edu.cn: *id031
+  http://english.whut.edu.cn/wn/201405/t20140508_116073.html:
+    http://english.whut.edu.cn: *id032
+  http://english.whut.edu.cn/wn/201405/t20140526_116865.html:
+    http://english.whut.edu.cn: *id033
+  http://english.whut.edu.cn/wn/201405/t20140526_116866.html:
+    http://english.whut.edu.cn: *id034
+  http://english.whut.edu.cn/wn/201405/t20140526_116870.html:
+    http://english.whut.edu.cn: *id035
+  http://english.whut.edu.cn/wn/201405/t20140526_116874.html:
+    http://english.whut.edu.cn: *id036
+  http://i.whut.edu.cn/: {}
+  http://i.whut.edu.cn//IPv6zy/:
+    http://i.whut.edu.cn/: *id037
+  http://i.whut.edu.cn//bmxw/kyjd/clfhzdsys/201410/t20141017_121192.shtml:
+    http://i.whut.edu.cn/: *id038
+  http://i.whut.edu.cn//bmxw/qtdw/xyy/201410/t20141022_131160.shtml:
+    http://i.whut.edu.cn/: *id039
+  http://i.whut.edu.cn//bmxw/znbm/kxjsfzy/kjkfb/201410/t20141023_131255.shtml:
+    http://i.whut.edu.cn/: *id040
+  http://i.whut.edu.cn//bmxw/znbm/ltxgzc/201410/t20141024_131306.shtml:
+    http://i.whut.edu.cn/: *id041
+  http://i.whut.edu.cn//bmxw/znbm/szjd/201410/t20141020_121269.shtml:
+    http://i.whut.edu.cn/: *id042
+  http://i.whut.edu.cn//bmxw/znbm/szjd/201410/t20141022_131185.shtml:
+    http://i.whut.edu.cn/: *id043
+  http://i.whut.edu.cn//bmxw/znbm/tyb/201410/t20141021_121363.shtml:
+    http://i.whut.edu.cn/: *id044
+  http://i.whut.edu.cn//bmxw/znbm/tyb/201410/t20141024_131344.shtml:
+    http://i.whut.edu.cn/: *id045
+  http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141018_121240.shtml:
+    http://i.whut.edu.cn/: *id046
+  http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141019_121253.shtml:
+    http://i.whut.edu.cn/: *id047
+  http://i.whut.edu.cn//bmxw/znbm/xgh/201410/t20141020_121310.shtml:
+    http://i.whut.edu.cn/: *id048
+  http://i.whut.edu.cn//bmxw/znbm/yjsy/bgs/201410/t20141017_121230.shtml:
+    http://i.whut.edu.cn/: *id049
+  http://i.whut.edu.cn//bmxw/znbm/yjsy/ygk/201410/t20141017_121228.shtml:
+    http://i.whut.edu.cn/: *id050
+  http://i.whut.edu.cn//bmxw/znbm/zzb/201410/t20141023_131228.shtml:
+    http://i.whut.edu.cn/: *id051
+  http://i.whut.edu.cn//bmxw/znbm/zzb/201410/t20141023_131229.shtml:
+    http://i.whut.edu.cn/: *id052
+  http://i.whut.edu.cn//jjjb/201406/t20140611_117751.htm:
+    http://i.whut.edu.cn/: *id053
+  http://i.whut.edu.cn//jjjb/201406/t20140616_117898.htm:
+    http://i.whut.edu.cn/: *id054
+  http://i.whut.edu.cn//jjjb/201406/t20140620_118162.htm:
+    http://i.whut.edu.cn/: *id055
+  http://i.whut.edu.cn//jjjb/201409/t20140923_120262.htm:
+    http://i.whut.edu.cn/: *id056
+  http://i.whut.edu.cn//jxdd/201409/t20140904_119244.shtml:
+    http://i.whut.edu.cn/: *id057
+  http://i.whut.edu.cn//jxdd/201409/t20140909_119357.shtml:
+    http://i.whut.edu.cn/: *id058
+  http://i.whut.edu.cn//jxdd/201409/t20140922_120104.shtml:
+    http://i.whut.edu.cn/: *id059
+  http://i.whut.edu.cn//jxdd/201409/t20140922_120176.shtml:
+    http://i.whut.edu.cn/: *id060
+  http://i.whut.edu.cn//jxdd/201409/t20140924_120357.shtml:
+    http://i.whut.edu.cn/: *id061
+  http://i.whut.edu.cn//jxdd/201410/t20141010_120843.shtml:
+    http://i.whut.edu.cn/: *id062
+  http://i.whut.edu.cn//lgjz/kyjd/slglzx/201410/t20141022_131167.shtml:
+    http://i.whut.edu.cn/: *id063
+  http://i.whut.edu.cn//lgjz/xyb/clxy/201410/t20141024_131326.shtml:
+    http://i.whut.edu.cn/: *id064
+  http://i.whut.edu.cn//lgjz/xyb/glxy/201410/t20141022_131171.shtml:
+    http://i.whut.edu.cn/: *id065
+  http://i.whut.edu.cn//lgjz/xyb/hyxy/201410/t20141023_131251.shtml:
+    http://i.whut.edu.cn/: *id066
+  http://i.whut.edu.cn//lgjz/xyb/jdxy/201410/t20141023_131242.shtml:
+    http://i.whut.edu.cn/: *id067
+  http://i.whut.edu.cn//lgjz/xyb/jjxy/201410/t20141020_121292.shtml:
+    http://i.whut.edu.cn/: *id068
+  http://i.whut.edu.cn//lgjz/xyb/jjxy/201410/t20141021_121375.shtml:
+    http://i.whut.edu.cn/: *id069
+  http://i.whut.edu.cn//lgjz/xyb/jtxy/201410/t20141023_131272.shtml:
+    http://i.whut.edu.cn/: *id070
+  http://i.whut.edu.cn//lgjz/xyb/tjxy/201410/t20141022_131157.shtml:
+    http://i.whut.edu.cn/: *id071
+  http://i.whut.edu.cn//lgjz/xyb/wgyxy/201410/t20141020_121304.shtml:
+    http://i.whut.edu.cn/: *id072
+  http://i.whut.edu.cn//lgjz/xyb/wlgcxy/201410/t20141021_121348.shtml:
+    http://i.whut.edu.cn/: *id073
+  http://i.whut.edu.cn//lgjz/xyb/wlgcxy/201410/t20141023_131279.shtml:
+    http://i.whut.edu.cn/: *id074
+  http://i.whut.edu.cn//lgjz/xyb/ysysjxy/201410/t20141020_121282.shtml:
+    http://i.whut.edu.cn/: *id075
+  http://i.whut.edu.cn//lgjz/xyb/ysysjxy/201410/t20141022_131191.shtml:
+    http://i.whut.edu.cn/: *id076
+  http://i.whut.edu.cn//lgjz/xyb/zdhxy/201410/t20141020_121285.shtml:
+    http://i.whut.edu.cn/: *id077
+  http://i.whut.edu.cn//lgjz/xyb/zhxy/201410/t20141024_131312.shtml:
+    http://i.whut.edu.cn/: *id078
+  http://i.whut.edu.cn//lgjz/xyb/zzyxzxy/201410/t20141024_131301.shtml:
+    http://i.whut.edu.cn/: *id079
+  http://i.whut.edu.cn//tpxw/201409/t20140926_120471.shtml:
+    http://i.whut.edu.cn/: *id080
+  http://i.whut.edu.cn//tpxw/201410/t20141013_120960.shtml:
+    http://i.whut.edu.cn/: *id081
+  http://i.whut.edu.cn//tpxw/201410/t20141013_120962.shtml:
+    http://i.whut.edu.cn/: *id082
+  http://i.whut.edu.cn//tpxw/201410/t20141013_120964.shtml:
+    http://i.whut.edu.cn/: *id083
+  http://i.whut.edu.cn//tpxw/201410/t20141023_131268.shtml:
+    http://i.whut.edu.cn/: *id084
+  http://i.whut.edu.cn//xxtg/znbm/bwc/201404/t20140411_114626.shtml:
+    http://i.whut.edu.cn/: *id085
+  http://i.whut.edu.cn//xxtg/znbm/gzc/201410/t20141022_131197.shtml:
+    http://i.whut.edu.cn/: *id086
+  http://i.whut.edu.cn//xxtg/znbm/jcc/201309/t20130912_103052.shtml:
+    http://i.whut.edu.cn/: *id087
+  http://i.whut.edu.cn//xxtg/znbm/jcc/201309/t20130929_104241.shtml:
+    http://i.whut.edu.cn/: *id088
+  http://i.whut.edu.cn//xxtg/znbm/jwc/201409/t20140915_119696.shtml:
+    http://i.whut.edu.cn/: *id089
+  http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/cggl/201409/t20140905_119271.shtml:
+    http://i.whut.edu.cn/: *id090
+  http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/kjkfb/201410/t20141023_131249.shtml:
+    http://i.whut.edu.cn/: *id091
+  http://i.whut.edu.cn//xxtg/znbm/kxjsfzy/zhxx/201404/t20140416_115013.shtml:
+    http://i.whut.edu.cn/: *id092
+  http://i.whut.edu.cn//xxtg/znbm/ldyg/201410/t20141024_131307.shtml:
+    http://i.whut.edu.cn/: *id093
+  http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_rsk/201409/t20140930_120687.shtml:
+    http://i.whut.edu.cn/: *id094
+  http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_zcbgs/201409/t20140929_120666.shtml:
+    http://i.whut.edu.cn/: *id095
+  http://i.whut.edu.cn//xxtg/znbm/rsc/xxtzgg_zcbgs/201410/t20141024_131309.shtml:
+    http://i.whut.edu.cn/: *id096
+  http://i.whut.edu.cn//xxtg/znbm/shfz/201410/t20141024_131349.shtml:
+    http://i.whut.edu.cn/: *id097
+  http://i.whut.edu.cn//xxtg/znbm/tyb/201410/t20141024_131337.shtml:
+    http://i.whut.edu.cn/: *id098
+  http://i.whut.edu.cn//xxtg/znbm/tyb/201410/t20141024_131352.shtml:
+    http://i.whut.edu.cn/: *id099
+  http://i.whut.edu.cn//xxtg/znbm/xcb/201403/t20140312_112642.shtml:
+    http://i.whut.edu.cn/: *id100
+  http://i.whut.edu.cn//xxtg/znbm/xcb/201409/t20140915_119688.shtml:
+    http://i.whut.edu.cn/: *id101
+  http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131181.shtml:
+    http://i.whut.edu.cn/: *id102
+  http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131182.shtml:
+    http://i.whut.edu.cn/: *id103
+  http://i.whut.edu.cn//xxtg/znbm/xgb/xsglk/201410/t20141022_131183.shtml:
+    http://i.whut.edu.cn/: *id104
+  http://i.whut.edu.cn//xxtg/znbm/xgh/201409/t20140915_119695.shtml:
+    http://i.whut.edu.cn/: *id105
+  http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201312/t20131202_109185.shtml:
+    http://i.whut.edu.cn/: *id106
+  http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201410/t20141024_131350.shtml:
+    http://i.whut.edu.cn/: *id107
+  http://i.whut.edu.cn//xxtg/znbm/xzbgs/xbmsk/201410/t20141024_131351.shtml:
+    http://i.whut.edu.cn/: *id108
+  http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131152.shtml:
+    http://i.whut.edu.cn/: *id109
+  http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131161.shtml:
+    http://i.whut.edu.cn/: *id110
+  http://i.whut.edu.cn//xxtg/znbm/yjsy/201410/t20141022_131162.shtml:
+    http://i.whut.edu.cn/: *id111
+  http://i.whut.edu.cn//xytg/xyb/clxy/201410/t20141022_131164.shtml:
+    http://i.whut.edu.cn/: *id112
+  http://i.whut.edu.cn//xytg/xyb/clxy/201410/t20141022_131166.shtml:
+    http://i.whut.edu.cn/: *id113
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/gjjyxy/201312/t20131220_110714.shtml:
+    http://i.whut.edu.cn/: *id114
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/gjjyxy/201407/t20140720_118956.shtml:
+    http://i.whut.edu.cn/: *id115
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/pxzx/201410/t20141023_131273.shtml:
+    http://i.whut.edu.cn/: *id116
+  http://i.whut.edu.cn//xytg/xyb/gjjyxy/pxzx/201410/t20141024_131330.shtml:
+    http://i.whut.edu.cn/: *id117
+  http://i.whut.edu.cn//xytg/xyb/jdxy/201410/t20141024_131304.shtml:
+    http://i.whut.edu.cn/: *id118
+  http://i.whut.edu.cn//xytg/xyb/lxy/201410/t20141021_121410.shtml:
+    http://i.whut.edu.cn/: *id119
+  http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141022_131165.shtml:
+    http://i.whut.edu.cn/: *id120
+  http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141023_131240.shtml:
+    http://i.whut.edu.cn/: *id121
+  http://i.whut.edu.cn//xytg/xyb/qcxy/201410/t20141023_131257.shtml:
+    http://i.whut.edu.cn/: *id122
+  http://i.whut.edu.cn//xytg/xyb/tyb/201410/t20141021_121370.shtml:
+    http://i.whut.edu.cn/: *id123
+  http://i.whut.edu.cn//xytg/xyb/zdhxy/201410/t20141024_131313.shtml:
+    http://i.whut.edu.cn/: *id124
+  http://i.whut.edu.cn//xytg/xyb/zhxy/201410/t20141021_121368.shtml:
+    http://i.whut.edu.cn/: *id125
+  http://i.whut.edu.cn//xytg/xyb/zzxzxy/201410/t20141023_131261.shtml:
+    http://i.whut.edu.cn/: *id126
+  http://i.whut.edu.cn//xytg/zsdw/clyjzx/201410/t20141022_131176.shtml:
+    http://i.whut.edu.cn/: *id127
+  http://i.whut.edu.cn//xytg/zsdw/dag/201410/t20141022_131163.shtml:
+    http://i.whut.edu.cn/: *id128
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201407/t20140711_118827.shtml:
+    http://i.whut.edu.cn/: *id129
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141009_120815.shtml:
+    http://i.whut.edu.cn/: *id130
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141022_131177.shtml:
+    http://i.whut.edu.cn/: *id131
+  http://i.whut.edu.cn//xytg/zsdw/wlxxzx/wlzx/201410/t20141024_131357.shtml:
+    http://i.whut.edu.cn/: *id132
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141022_131150.shtml:
+    http://i.whut.edu.cn/: *id133
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141022_131173.shtml:
+    http://i.whut.edu.cn/: *id134
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131283.shtml:
+    http://i.whut.edu.cn/: *id135
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131284.shtml:
+    http://i.whut.edu.cn/: *id136
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131285.shtml:
+    http://i.whut.edu.cn/: *id137
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131286.shtml:
+    http://i.whut.edu.cn/: *id138
+  http://i.whut.edu.cn//xyxw/clxy/201410/t20141023_131290.shtml:
+    http://i.whut.edu.cn/: *id139
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121184.shtml:
+    http://i.whut.edu.cn/: *id140
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121189.shtml:
+    http://i.whut.edu.cn/: *id141
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141017_121195.shtml:
+    http://i.whut.edu.cn/: *id142
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141022_131169.shtml:
+    http://i.whut.edu.cn/: *id143
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141022_131170.shtml:
+    http://i.whut.edu.cn/: *id144
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141024_131425.shtml:
+    http://i.whut.edu.cn/: *id145
+  http://i.whut.edu.cn//xyxw/gjjyxy/gjjyxy/201410/t20141024_131426.shtml:
+    http://i.whut.edu.cn/: *id146
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141020_121309.shtml:
+    http://i.whut.edu.cn/: *id147
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121386.shtml:
+    http://i.whut.edu.cn/: *id148
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121394.shtml:
+    http://i.whut.edu.cn/: *id149
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141021_121420.shtml:
+    http://i.whut.edu.cn/: *id150
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141022_131198.shtml:
+    http://i.whut.edu.cn/: *id151
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141022_131201.shtml:
+    http://i.whut.edu.cn/: *id152
+  http://i.whut.edu.cn//xyxw/glxy/201410/t20141023_131252.shtml:
+    http://i.whut.edu.cn/: *id153
+  http://i.whut.edu.cn//xyxw/hgxy/201409/t20140929_120614.shtml:
+    http://i.whut.edu.cn/: *id154
+  http://i.whut.edu.cn//xyxw/hgxy/201409/t20140929_120634.shtml:
+    http://i.whut.edu.cn/: *id155
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141005_120738.shtml:
+    http://i.whut.edu.cn/: *id156
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141009_120800.shtml:
+    http://i.whut.edu.cn/: *id157
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141010_120872.shtml:
+    http://i.whut.edu.cn/: *id158
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141013_120988.shtml:
+    http://i.whut.edu.cn/: *id159
+  http://i.whut.edu.cn//xyxw/hgxy/201410/t20141021_121372.shtml:
+    http://i.whut.edu.cn/: *id160
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141023_131297.shtml:
+    http://i.whut.edu.cn/: *id161
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131298.shtml:
+    http://i.whut.edu.cn/: *id162
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131299.shtml:
+    http://i.whut.edu.cn/: *id163
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131314.shtml:
+    http://i.whut.edu.cn/: *id164
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131316.shtml:
+    http://i.whut.edu.cn/: *id165
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131339.shtml:
+    http://i.whut.edu.cn/: *id166
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141024_131354.shtml:
+    http://i.whut.edu.cn/: *id167
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141025_131435.shtml:
+    http://i.whut.edu.cn/: *id168
+  http://i.whut.edu.cn//xyxw/hyxy/201410/t20141025_131436.shtml:
+    http://i.whut.edu.cn/: *id169
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141023_131245.shtml:
+    http://i.whut.edu.cn/: *id170
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141023_131246.shtml:
+    http://i.whut.edu.cn/: *id171
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131417.shtml:
+    http://i.whut.edu.cn/: *id172
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131418.shtml:
+    http://i.whut.edu.cn/: *id173
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131420.shtml:
+    http://i.whut.edu.cn/: *id174
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131421.shtml:
+    http://i.whut.edu.cn/: *id175
+  http://i.whut.edu.cn//xyxw/jdxy/201410/t20141024_131422.shtml:
+    http://i.whut.edu.cn/: *id176
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141010_120868.shtml:
+    http://i.whut.edu.cn/: *id177
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141013_120957.shtml:
+    http://i.whut.edu.cn/: *id178
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141020_121287.shtml:
+    http://i.whut.edu.cn/: *id179
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141023_131238.shtml:
+    http://i.whut.edu.cn/: *id180
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131310.shtml:
+    http://i.whut.edu.cn/: *id181
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131317.shtml:
+    http://i.whut.edu.cn/: *id182
+  http://i.whut.edu.cn//xyxw/jjxy/201410/t20141024_131423.shtml:
+    http://i.whut.edu.cn/: *id183
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131153.shtml:
+    http://i.whut.edu.cn/: *id184
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131158.shtml:
+    http://i.whut.edu.cn/: *id185
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141022_131178.shtml:
+    http://i.whut.edu.cn/: *id186
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131266.shtml:
+    http://i.whut.edu.cn/: *id187
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131275.shtml:
+    http://i.whut.edu.cn/: *id188
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141023_131276.shtml:
+    http://i.whut.edu.cn/: *id189
+  http://i.whut.edu.cn//xyxw/jsjxy/201410/t20141024_131305.shtml:
+    http://i.whut.edu.cn/: *id190
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141010_120840.shtml:
+    http://i.whut.edu.cn/: *id191
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141011_120904.shtml:
+    http://i.whut.edu.cn/: *id192
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141013_121005.shtml:
+    http://i.whut.edu.cn/: *id193
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141015_121073.shtml:
+    http://i.whut.edu.cn/: *id194
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141019_121256.shtml:
+    http://i.whut.edu.cn/: *id195
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141019_121257.shtml:
+    http://i.whut.edu.cn/: *id196
+  http://i.whut.edu.cn//xyxw/jtxy/201410/t20141022_131175.shtml:
+    http://i.whut.edu.cn/: *id197
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141021_121366.shtml:
+    http://i.whut.edu.cn/: *id198
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125790.shtml:
+    http://i.whut.edu.cn/: *id199
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125800.shtml:
+    http://i.whut.edu.cn/: *id200
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141022_125801.shtml:
+    http://i.whut.edu.cn/: *id201
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131231.shtml:
+    http://i.whut.edu.cn/: *id202
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131232.shtml:
+    http://i.whut.edu.cn/: *id203
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141023_131271.shtml:
+    http://i.whut.edu.cn/: *id204
+  http://i.whut.edu.cn//xyxw/lxy/201410/t20141025_131434.shtml:
+    http://i.whut.edu.cn/: *id205
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141011_120896.shtml:
+    http://i.whut.edu.cn/: *id206
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141020_121303.shtml:
+    http://i.whut.edu.cn/: *id207
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141020_121332.shtml:
+    http://i.whut.edu.cn/: *id208
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141021_121407.shtml:
+    http://i.whut.edu.cn/: *id209
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141022_131156.shtml:
+    http://i.whut.edu.cn/: *id210
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141024_131324.shtml:
+    http://i.whut.edu.cn/: *id211
+  http://i.whut.edu.cn//xyxw/ndxy/201410/t20141024_131415.shtml:
+    http://i.whut.edu.cn/: *id212
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141009_120797.shtml:
+    http://i.whut.edu.cn/: *id213
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141010_120830.shtml:
+    http://i.whut.edu.cn/: *id214
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141015_121049.shtml:
+    http://i.whut.edu.cn/: *id215
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141017_121231.shtml:
+    http://i.whut.edu.cn/: *id216
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121322.shtml:
+    http://i.whut.edu.cn/: *id217
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121324.shtml:
+    http://i.whut.edu.cn/: *id218
+  http://i.whut.edu.cn//xyxw/qcxy/201410/t20141020_121325.shtml:
+    http://i.whut.edu.cn/: *id219
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121419.shtml:
+    http://i.whut.edu.cn/: *id220
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121421.shtml:
+    http://i.whut.edu.cn/: *id221
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121424.shtml:
+    http://i.whut.edu.cn/: *id222
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141021_121425.shtml:
+    http://i.whut.edu.cn/: *id223
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141022_131219.shtml:
+    http://i.whut.edu.cn/: *id224
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141023_131270.shtml:
+    http://i.whut.edu.cn/: *id225
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141024_131419.shtml:
+    http://i.whut.edu.cn/: *id226
+  http://i.whut.edu.cn//xyxw/sjxy/201410/t20141024_131429.shtml:
+    http://i.whut.edu.cn/: *id227
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141020_121341.shtml:
+    http://i.whut.edu.cn/: *id228
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121397.shtml:
+    http://i.whut.edu.cn/: *id229
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121413.shtml:
+    http://i.whut.edu.cn/: *id230
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141021_121415.shtml:
+    http://i.whut.edu.cn/: *id231
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141022_131172.shtml:
+    http://i.whut.edu.cn/: *id232
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141023_131247.shtml:
+    http://i.whut.edu.cn/: *id233
+  http://i.whut.edu.cn//xyxw/szb/201410/t20141023_131274.shtml:
+    http://i.whut.edu.cn/: *id234
+  http://i.whut.edu.cn//xyxw/tjxy/201409/t20140925_120440.shtml:
+    http://i.whut.edu.cn/: *id235
+  http://i.whut.edu.cn//xyxw/tjxy/201409/t20140926_120490.shtml:
+    http://i.whut.edu.cn/: *id236
+  http://i.whut.edu.cn//xyxw/tjxy/201409/t20140930_120681.shtml:
+    http://i.whut.edu.cn/: *id237
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141013_120999.shtml:
+    http://i.whut.edu.cn/: *id238
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141016_121131.shtml:
+    http://i.whut.edu.cn/: *id239
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141023_131233.shtml:
+    http://i.whut.edu.cn/: *id240
+  http://i.whut.edu.cn//xyxw/tjxy/201410/t20141023_131267.shtml:
+    http://i.whut.edu.cn/: *id241
+  http://i.whut.edu.cn//xyxw/tyb/201403/t20140312_112638.shtml:
+    http://i.whut.edu.cn/: *id242
+  http://i.whut.edu.cn//xyxw/tyb/201403/t20140321_113232.shtml:
+    http://i.whut.edu.cn/: *id243
+  http://i.whut.edu.cn//xyxw/tyb/201404/t20140417_115046.shtml:
+    http://i.whut.edu.cn/: *id244
+  http://i.whut.edu.cn//xyxw/tyb/201406/t20140605_117421.shtml:
+    http://i.whut.edu.cn/: *id245
+  http://i.whut.edu.cn//xyxw/tyb/201409/t20140915_119692.shtml:
+    http://i.whut.edu.cn/: *id246
+  http://i.whut.edu.cn//xyxw/tyb/201409/t20140923_120277.shtml:
+    http://i.whut.edu.cn/: *id247
+  http://i.whut.edu.cn//xyxw/tyb/201410/t20141008_120778.shtml:
+    http://i.whut.edu.cn/: *id248
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131211.shtml:
+    http://i.whut.edu.cn/: *id249
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131212.shtml:
+    http://i.whut.edu.cn/: *id250
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131213.shtml:
+    http://i.whut.edu.cn/: *id251
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131214.shtml:
+    http://i.whut.edu.cn/: *id252
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141022_131215.shtml:
+    http://i.whut.edu.cn/: *id253
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141023_131288.shtml:
+    http://i.whut.edu.cn/: *id254
+  http://i.whut.edu.cn//xyxw/wfxy/201410/t20141023_131289.shtml:
+    http://i.whut.edu.cn/: *id255
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141021_121423.shtml:
+    http://i.whut.edu.cn/: *id256
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131336.shtml:
+    http://i.whut.edu.cn/: *id257
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131340.shtml:
+    http://i.whut.edu.cn/: *id258
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131341.shtml:
+    http://i.whut.edu.cn/: *id259
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131342.shtml:
+    http://i.whut.edu.cn/: *id260
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131345.shtml:
+    http://i.whut.edu.cn/: *id261
+  http://i.whut.edu.cn//xyxw/wgyxy/201410/t20141024_131346.shtml:
+    http://i.whut.edu.cn/: *id262
+  http://i.whut.edu.cn//xyxw/wljyxy/201406/t20140605_117430.shtml:
+    http://i.whut.edu.cn/: *id263
+  http://i.whut.edu.cn//xyxw/wljyxy/201406/t20140613_117831.shtml:
+    http://i.whut.edu.cn/: *id264
+  http://i.whut.edu.cn//xyxw/wljyxy/201407/t20140710_118795.shtml:
+    http://i.whut.edu.cn/: *id265
+  http://i.whut.edu.cn//xyxw/wljyxy/201407/t20140716_118921.shtml:
+    http://i.whut.edu.cn/: *id266
+  http://i.whut.edu.cn//xyxw/wljyxy/201409/t20140915_119787.shtml:
+    http://i.whut.edu.cn/: *id267
+  http://i.whut.edu.cn//xyxw/wljyxy/201410/t20141015_121059.shtml:
+    http://i.whut.edu.cn/: *id268
+  http://i.whut.edu.cn//xyxw/wljyxy/201410/t20141020_121320.shtml:
+    http://i.whut.edu.cn/: *id269
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141015_121064.shtml:
+    http://i.whut.edu.cn/: *id270
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141020_121300.shtml:
+    http://i.whut.edu.cn/: *id271
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121349.shtml:
+    http://i.whut.edu.cn/: *id272
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121399.shtml:
+    http://i.whut.edu.cn/: *id273
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121401.shtml:
+    http://i.whut.edu.cn/: *id274
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141021_121405.shtml:
+    http://i.whut.edu.cn/: *id275
+  http://i.whut.edu.cn//xyxw/wlxy/201410/t20141024_131355.shtml:
+    http://i.whut.edu.cn/: *id276
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121250.shtml:
+    http://i.whut.edu.cn/: *id277
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121251.shtml:
+    http://i.whut.edu.cn/: *id278
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141019_121252.shtml:
+    http://i.whut.edu.cn/: *id279
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141020_121305.shtml:
+    http://i.whut.edu.cn/: *id280
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141020_121308.shtml:
+    http://i.whut.edu.cn/: *id281
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141021_121403.shtml:
+    http://i.whut.edu.cn/: *id282
+  http://i.whut.edu.cn//xyxw/xxxy/201410/t20141021_121406.shtml:
+    http://i.whut.edu.cn/: *id283
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141017_121217.shtml:
+    http://i.whut.edu.cn/: *id284
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121377.shtml:
+    http://i.whut.edu.cn/: *id285
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121378.shtml:
+    http://i.whut.edu.cn/: *id286
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121379.shtml:
+    http://i.whut.edu.cn/: *id287
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121380.shtml:
+    http://i.whut.edu.cn/: *id288
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141021_121384.shtml:
+    http://i.whut.edu.cn/: *id289
+  http://i.whut.edu.cn//xyxw/zdhxy/201410/t20141022_131168.shtml:
+    http://i.whut.edu.cn/: *id290
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131250.shtml:
+    http://i.whut.edu.cn/: *id291
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131278.shtml:
+    http://i.whut.edu.cn/: *id292
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131295.shtml:
+    http://i.whut.edu.cn/: *id293
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141023_131296.shtml:
+    http://i.whut.edu.cn/: *id294
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131300.shtml:
+    http://i.whut.edu.cn/: *id295
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131347.shtml:
+    http://i.whut.edu.cn/: *id296
+  http://i.whut.edu.cn//xyxw/zhxy/201410/t20141024_131428.shtml:
+    http://i.whut.edu.cn/: *id297
+  http://i.whut.edu.cn//xyxw/zyjsxy/201406/t20140630_118433.shtml:
+    http://i.whut.edu.cn/: *id298
+  http://i.whut.edu.cn//xyxw/zyjsxy/201407/t20140711_118847.shtml:
+    http://i.whut.edu.cn/: *id299
+  http://i.whut.edu.cn//xyxw/zyjsxy/201407/t20140730_119010.shtml:
+    http://i.whut.edu.cn/: *id300
+  http://i.whut.edu.cn//xyxw/zyjsxy/201409/t20140904_119261.shtml:
+    http://i.whut.edu.cn/: *id301
+  http://i.whut.edu.cn//xyxw/zyjsxy/201409/t20140912_119539.shtml:
+    http://i.whut.edu.cn/: *id302
+  http://i.whut.edu.cn//xyxw/zyjsxy/201410/t20141024_131315.shtml:
+    http://i.whut.edu.cn/: *id303
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141020_121266.shtml:
+    http://i.whut.edu.cn/: *id304
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121400.shtml:
+    http://i.whut.edu.cn/: *id305
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121402.shtml:
+    http://i.whut.edu.cn/: *id306
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121412.shtml:
+    http://i.whut.edu.cn/: *id307
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141021_121416.shtml:
+    http://i.whut.edu.cn/: *id308
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141022_131154.shtml:
+    http://i.whut.edu.cn/: *id309
+  http://i.whut.edu.cn//xyxw/zzxzxy/201410/t20141022_131184.shtml:
+    http://i.whut.edu.cn/: *id310
+  http://i.whut.edu.cn/xskw/:
+    http://i.whut.edu.cn/: *id311
+    http://i.whut.edu.cn/xskw/: *id312
+  http://i.whut.edu.cn/xskw//:
+    http://i.whut.edu.cn/xskw/: *id313
+  http://i.whut.edu.cn/xxtg/znbm/tyb/:
+    http://i.whut.edu.cn/: *id314
+  http://jxpt.whut.edu.cn/:
+    http://i.whut.edu.cn/: *id315
+  http://kfy.whut.edu.cn/rdgz/:
+    http://i.whut.edu.cn/: *id316
+  http://kjcx.whut.edu.cn/index.jsp:
+    http://lib.whut.edu.cn/: *id317
+  http://lgdy.whut.edu.cn:
+    http://i.whut.edu.cn/: *id318
+  http://lgdy.whut.edu.cn/?c=topic&a=whdjt:
+    http://i.whut.edu.cn/: *id319
+  http://lib.whut.edu.cn/:
+    http://i.whut.edu.cn/: *id320
+    http://i.whut.edu.cn/xskw/: *id321
+  http://mail.whut.edu.cn:
+    http://i.whut.edu.cn/: *id322
+  http://oa.whut.edu.cn/icons/help/index.htm:
+    http://i.whut.edu.cn/: *id323
+  http://online.whut.edu.cn:
+    http://i.whut.edu.cn/: *id324
+  http://pub.whut.edu.cn/yw/:
+    http://public.whut.edu.cn/yw: *id325
+  http://public.whut.edu.cn/bxyw:
+    http://i.whut.edu.cn/: *id326
+    http://i.whut.edu.cn/xskw/: *id327
+  http://public.whut.edu.cn/jgdw/:
+    http://i.whut.edu.cn/: *id328
+  http://public.whut.edu.cn/price/:
+    http://i.whut.edu.cn/: *id329
+  http://public.whut.edu.cn/vcampus/:
+    http://i.whut.edu.cn/: *id330
+  http://public.whut.edu.cn/yw:
+    http://i.whut.edu.cn/: *id331
+    http://i.whut.edu.cn/xskw/: *id332
+  http://scc.whut.edu.cn:
+    http://i.whut.edu.cn/: *id333
+    http://i.whut.edu.cn/xskw/: *id334
+  http://sie.whut.edu.cn/english/:
+    http://english.whut.edu.cn: *id335
+  http://sso.whut.edu.cn:8080/ias/jump?sysid=whut_wszz:
+    http://i.whut.edu.cn/: *id336
+  http://stuplaza.whut.edu.cn/:
+    http://i.whut.edu.cn/: *id337
+    http://i.whut.edu.cn/xskw/: *id338
+  http://vision.whut.edu.cn:
+    http://i.whut.edu.cn/: *id339
+  http://wlxt.whut.edu.cn/:
+    http://i.whut.edu.cn/: *id340
+  http://wlxt.whut.edu.cn/new/zlgc/:
+    http://i.whut.edu.cn/: *id341
+  http://www.lib.whut.edu.cn/dzfw/1003.jhtml:
+    http://lib.whut.edu.cn/: *id342
+  http://www.lib.whut.edu.cn/xw/829.jhtml:
+    http://lib.whut.edu.cn/: *id343
+  http://www.lib.whut.edu.cn:80/dzfw/1001.jhtml:
+    http://lib.whut.edu.cn/: *id344
+  http://www.lib.whut.edu.cn:80/dzfw/1002.jhtml:
+    http://lib.whut.edu.cn/: *id345
+  http://www.lib.whut.edu.cn:80/dzfw/1003.jhtml:
+    http://lib.whut.edu.cn/: *id346
+  http://www.lib.whut.edu.cn:80/dzfw/1005.jhtml:
+    http://lib.whut.edu.cn/: *id347
+  http://www.lib.whut.edu.cn:80/dzfw/1007.jhtml:
+    http://lib.whut.edu.cn/: *id348
+  http://www.lib.whut.edu.cn:80/dzfw/1216.jhtml:
+    http://lib.whut.edu.cn/: *id349
+  http://www.lib.whut.edu.cn:80/dzfw/1972.jhtml:
+    http://lib.whut.edu.cn/: *id350
+  http://www.lib.whut.edu.cn:80/dzfw/993.jhtml:
+    http://lib.whut.edu.cn/: *id351
+  http://www.lib.whut.edu.cn:80/dzfw/995.jhtml:
+    http://lib.whut.edu.cn/: *id352
+  http://www.lib.whut.edu.cn:80/px/2296.jhtml:
+    http://lib.whut.edu.cn/: *id353
+  http://www.lib.whut.edu.cn:80/px/2317.jhtml:
+    http://lib.whut.edu.cn/: *id354
+  http://www.lib.whut.edu.cn:80/px/2336.jhtml:
+    http://lib.whut.edu.cn/: *id355
+  http://www.lib.whut.edu.cn:80/px/2346.jhtml:
+    http://lib.whut.edu.cn/: *id356
+  http://www.lib.whut.edu.cn:80/px/2351.jhtml:
+    http://lib.whut.edu.cn/: *id357
+  http://www.lib.whut.edu.cn:80/px/2358.jhtml:
+    http://lib.whut.edu.cn/: *id358
+  http://www.lib.whut.edu.cn:80/px/2360.jhtml:
+    http://lib.whut.edu.cn/: *id359
+  http://www.lib.whut.edu.cn:80/tzgg/2345.jhtml:
+    http://lib.whut.edu.cn/: *id360
+  http://www.lib.whut.edu.cn:80/tzgg/2347.jhtml:
+    http://lib.whut.edu.cn/: *id361
+  http://www.lib.whut.edu.cn:80/tzgg/2348.jhtml:
+    http://lib.whut.edu.cn/: *id362
+  http://www.lib.whut.edu.cn:80/tzgg/2353.jhtml:
+    http://lib.whut.edu.cn/: *id363
+  http://www.lib.whut.edu.cn:80/tzgg/2355.jhtml:
+    http://lib.whut.edu.cn/: *id364
+  http://www.lib.whut.edu.cn:80/tzgg/2357.jhtml:
+    http://lib.whut.edu.cn/: *id365
+  http://www.lib.whut.edu.cn:80/tzgg/2359.jhtml:
+    http://lib.whut.edu.cn/: *id366
+  http://www.lib.whut.edu.cn:80/xw/2180.jhtml:
+    http://lib.whut.edu.cn/: *id367
+  http://www.lib.whut.edu.cn:80/xw/2188.jhtml:
+    http://lib.whut.edu.cn/: *id368
+  http://www.lib.whut.edu.cn:80/xw/2204.jhtml:
+    http://lib.whut.edu.cn/: *id369
+  http://www.lib.whut.edu.cn:80/xw/2205.jhtml:
+    http://lib.whut.edu.cn/: *id370
+  http://www.lib.whut.edu.cn:80/xw/2206.jhtml:
+    http://lib.whut.edu.cn/: *id371
+  http://www.lib.whut.edu.cn:80/xw/2246.jhtml:
+    http://lib.whut.edu.cn/: *id372
+  http://www.lib.whut.edu.cn:80/xw/2335.jhtml:
+    http://lib.whut.edu.cn/: *id373
+  http://www.whut.edu.cn:
+    http://english.whut.edu.cn: *id374
+    http://lib.whut.edu.cn/: *id375
+  http://www.whut.edu.cn/index.htm:
+    http://i.whut.edu.cn/: *id376
+    http://i.whut.edu.cn/xskw/: *id377
+  http://wzq.whut.edu.cn:
+    http://i.whut.edu.cn/: *id378
+  http://xxgk.whut.edu.cn/:
+    http://i.whut.edu.cn/: *id379
+  http://youth.whut.edu.cn/:
+    http://i.whut.edu.cn/: *id380
+    http://i.whut.edu.cn/xskw/: *id381
+  http://zs.whut.edu.cn/:
+    http://i.whut.edu.cn/: *id382
+    http://i.whut.edu.cn/xskw/: *id383
+succ: *id001

@@ -47,9 +47,11 @@ class MySqlBase(object):
 		cur.close()
 		cnx.commit()
 		cnx.close()
-		for row in records:
-		    for r in row:
-		        maxid = r
+		if records:
+			maxid = records[0][0]
+		# for row in records:
+		# 	if row:
+		# 		maxid = row[0]
 		return maxid
 
 	def insertUrltable(self,urlid,originalurl,shorturl):
@@ -76,6 +78,22 @@ class MySqlBase(object):
 		cnx.commit()
 		cnx.close()
 
+	def getOriUrlFSUrl(self,tinyurl):
+		oriUrl = ''
+		cnx = connector.connect(user= self.user, password = self.pwd, host = self.host)
+		cur = cnx.cursor()
+		sqlorder = "USE %s" %self.basename 
+		cur.execute(sqlorder)
+		sqlorder = "select originalurl from %s where shorturl = '%s'" %(self.urltable,tinyurl)
+		cur.execute(sqlorder)
+		records = cur.fetchall()
+		cur.close()
+		cnx.commit()
+		cnx.close()
+		if records:
+			oriUrl = records[0][0]
+		return oriUrl
+	
 	def getOriginalUrllist(self):
 		originalUrllist = []
 		cnx = connector.connect(user= self.user, password = self.pwd, host = self.host)
@@ -89,8 +107,11 @@ class MySqlBase(object):
 		cnx.commit()
 		cnx.close()
 		for row in records:
-		    for r in row:
-		        originalUrllist.append(r)
+		    if row:
+		    	originalUrllist.append(row[0])
+		    # print('row', row)
+		    # for r in row:
+		        # originalUrllist.append(r)
 		return originalUrllist
 
 	def getNVisShortUrllist(self):
@@ -138,6 +159,21 @@ class MySqlBase(object):
 		cnx.commit()
 		cnx.close()
 
+	def getFilestrfWF(self,word):
+		filestr = ''
+		cnx = connector.connect(user= self.user, password = self.pwd, host = self.host)
+		cur = cnx.cursor()
+		sqlorder = "USE %s" %self.basename 
+		cur.execute(sqlorder)
+		sqlorder = "select filestr from %s where wordname = '%s'" %(self.wftable,word)
+		cur.execute(sqlorder)
+		records = cur.fetchall()
+		cur.close()
+		cnx.commit()
+		cnx.close()
+		if records:
+			filestr = records[0][0]
+		return filestr
 # basename = 'whutsearch'
 # urltable = 'urltable'
 # db = MySqlBase()
@@ -146,6 +182,14 @@ class MySqlBase(object):
 # # db.insertUrltable(4,'originalurl','shorturl')
 # maxid = db.getMaxUrlID()
 # print("maixid: ", maxid)
+# filestr = db.getFilestrfWF('应用')
+# print('filestr', filestr)
+
+# oriurl = db.getOriUrlFSUrl(filestr[0:-1])
+# print('originalurl', oriurl)
+
+# oriurllist = db.getOriginalUrllist()
+# print('oriurllist', oriurllist)
 # shorturl = db.getShortUrlList()
 # print('shorturl: ', shorturl)
 # visitedset = {'shorturl'}
