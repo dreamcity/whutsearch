@@ -26,7 +26,8 @@ class WhutSpider(object):
 			self.DG=nx.read_yaml(filename)
 		self.visited_set = set(self.DBP.getOriginalUrllist())
 		print('visited_set',self.visited_set)
-		self.wideSpider()
+		self.wideSpiderPre()
+		self.createGraph()
 		
 	def urlFilter(self, urllist):
 		urlFilterList = []
@@ -39,12 +40,10 @@ class WhutSpider(object):
 				pass
 		return urlFilterList
 
-	def wideSpider(self):
+	def wideSpiderPre(self):
 		count = 0
-		# print('data', count)
-		# while (self.todo_queue.isempty() == False):
 		while (self.todo_queue.isempty() == False and count <6):
-			# print('count', count)
+		# print('count', count)
 			count = count +1
 			superurl = self.todo_queue.dequeue()
 			urllist = self.SH.getUrlList(superurl)
@@ -58,20 +57,61 @@ class WhutSpider(object):
 			else:
 				self.SH.downloadPage(superurl)
 				self.visited_set.add(superurl)
-				if superurl in self.DG:
-					nodeValue = self.DG.in_degree(superurl,weight='weight')
-				else:
-					nodeValue = 1
-				# urllist = self.SH.getUrlList(superurl)
-				# urlFilterList = self.urlFilter(urllist)
-				urlnums = len(urlFilterList)
-				if urlnums == 0:
-					# print('length')
-					continue
-				urlEdgeWeight = nodeValue/(urlnums+1)
-				for urlstr in urlFilterList:
+	
+	def createGraph(self):
+		todolist = list(self.visited_set)
+		for superurl in todolist:
+			urllist = self.SH.getUrlList(superurl)
+			urlFilterList = self.urlFilter(urllist)
+			if superurl in self.DG:
+				nodeValue = self.DG.in_degree(superurl,weight='weight')
+			else:
+				nodeValue = 1
+			urlnums = len(urlFilterList)
+			if urlnums == 0:
+				# print('length')
+				continue
+			urlEdgeWeight = nodeValue/(urlnums+1)				
+			for urlstr in urlFilterList:
+				if urlstr in todolist:
 					self.DG.add_weighted_edges_from([(superurl,urlstr,urlEdgeWeight)])
-					# self.todo_queue.enqueue(urlstr)
+						
+	# def wideSpider(self):
+	# 	self.spiderpre()
+	# 	self.createGraph()
+	# def wideSpider(self):
+	# 	count = 0
+	# 	# print('data', count)
+	# 	# while (self.todo_queue.isempty() == False):
+	# 	while (self.todo_queue.isempty() == False and count <6):
+	# 		# print('count', count)
+	# 		count = count +1
+	# 		superurl = self.todo_queue.dequeue()
+	# 		urllist = self.SH.getUrlList(superurl)
+	# 		urlFilterList = self.urlFilter(urllist)
+	# 		for urlstr in urlFilterList:
+	# 			self.todo_queue.enqueue(urlstr)		
+	# 		# print('superurl ', superurl)
+	# 		if superurl in self.visited_set:
+	# 			# print('in')
+	# 			continue
+	# 		else:
+	# 			self.SH.downloadPage(superurl)
+	# 			self.visited_set.add(superurl)
+	# 			if superurl in self.DG:
+	# 				nodeValue = self.DG.in_degree(superurl,weight='weight')
+	# 			else:
+	# 				nodeValue = 1
+	# 			# urllist = self.SH.getUrlList(superurl)
+	# 			# urlFilterList = self.urlFilter(urllist)
+	# 			urlnums = len(urlFilterList)
+	# 			if urlnums == 0:
+	# 				# print('length')
+	# 				continue
+	# 			urlEdgeWeight = nodeValue/(urlnums+1)
+	# 			for urlstr in urlFilterList:
+	# 				self.DG.add_weighted_edges_from([(superurl,urlstr,urlEdgeWeight)])
+	# 				# self.todo_queue.enqueue(urlstr)
 			
 
 	def saveUrlGraph(self):

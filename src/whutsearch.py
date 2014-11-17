@@ -8,8 +8,8 @@ sys.path.append('./usersearch')
 import netspider.whutspider as ws
 import fileoperate.fileprocess as fpro
 import usersearch.searchrank as sr
-# starturl = r'http://i.whut.edu.cn/'
 
+# starturl = r'http://i.whut.edu.cn/'
 # wsp = ws.WhutSpider(starturl)
 # wsp.saveUrlGraph()
 # fp = fpro.FileProcess()
@@ -17,7 +17,8 @@ import usersearch.searchrank as sr
 inputstr = '武汉理工大学'
 srank = sr.SearchPage(inputstr)
 print('srank', srank.topnfile)
-'pbq8b 6vyv6 25t52'
+
+# 'pbq8b 6vyv6 25t52'
 # srank.topnfile
 # print('shorturl', fp.tinyurllist)
 # print('filelist', fp.txtfilelist)
